@@ -1,0 +1,234 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+\usepackage{fontawesome}
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Hung-Yang Chang} % Your name
+
+%address{123 Pleasant Lane \\ City, State 12345} % Your secondary address (optional)
+\usepackage{color}
+\usepackage[colorlinks,linkcolor=black,citecolor=black,urlcolor=black]{hyperref}
+
+\begin{document}
+\centering{{\faEnvelope}} \href{mailto:hung-yang.chang@mail.mcgill.ca}{hung-yang.chang@mail.mcgill.ca}, \href{mailto:hychangee@gmail.com}{hychangee@gmail.com}, \href{mailto:james.chang@cerence.com}{james.chang@cerence.com}
+\,{{\faMobile} (1) 438-509-9099}
+\,{{\faLinkedinSquare} \href{https://www.linkedin.com/in/hungyang/}{LinkedIn}}
+\,{{\faGithub} \href{https://github.com/HungYangChang}{GitHub}}
+\,{{\faGraduationCap} \href{https://scholar.google.com/citations?hl=en&user=TXVBQjYAAAAJ&view_op=list_works&gmla=AJsN-F5zI9RIMFMCIU-nhChg-EWECxyGUmXLAV-uxbrWYLtg_VvRP6_j0jxE7Vb-wedteD1o5aLV_i0-Q0W5fYOgJ5Fes3kHQr_ZbMxgz81j7IeJWwHOim4}{Google Scholar}}
+\,{{\faHome} Montreal/Brossard, QC, Canada}
+
+\raggedright{}
+
+%----------------------------------------------------------------------------------------
+%	Research interest SECTION
+%----------------------------------------------------------------------------------------
+
+% \begin{rSection}{RESEARCH INTERESTS}
+% Deep Learning/ Machine Learning on resource-constrained platforms
+% \end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Professional Experience}
+
+
+\begin{rSubsection}{Cloud Platform Innovations team, Cerence}{(Hybrid) Montreal, Canada}{Senior AI software developer, full-time permanent}{Aug. 2023 - now}
+% , manager: Evans Castonguay
+\item Developed and integrated LLM function call algorithms (Back-end) with automotive console UX/UI (Front-end) to enhance in-car user experience 
+\item Designed and implemented a robust testing framework for LLM function calls, including unit tests, contract tests, and user acceptance tests to ensure system reliability and performance
+\end{rSubsection}
+
+
+\begin{rSubsection}{Bittensor (Open-source ML), Opentensor}{(Remote) Ontario, Canada}{Machine Learning Engineer, full-time contract with Mining team}{Mar. 2023 - Jul. 2023}
+\item Fine-tuned multiple language models and built an ensemble model of them on  \href{https://github.com/opentensor/bittensor}{\normalfont \color{red} \faGithub \hspace{0.1cm} Bittensor project }, outperforming GPT-4 and other models on text prompting based on Bittensor reward mechanism
+\item Built multi-modality of the Bittensor network, which includes text-to-image, text-to-video, text-to-music, and more subnets
+
+\end{rSubsection}
+
+
+\begin{rSubsection}{McGill Edge Intelligence Lab, McGill}{Quebec, Canada}{Graduate Research Assistant, advised by Professor Warren Gross, full-time}{Sep. 2020 - Feb. 2023}
+\item  Proposed a pipeline framework to utilize the heterogeneous resources available in edge device, achieving an average 49\% of higher throughput and 61\% of lower energy-delay product in edge BERT inference than the best homogeneous configuration \href{https://link.springer.com/article/10.1007/s11265-022-01814-y}{\normalfont \color{red} \faFilePdfO \hspace{0.1cm} JSPS'22}
+\item Integrated Neural Architecture Search and pipeline on BERT model, achieving 9x higher inference throughput with only a 1.3\% decrease in accuracy in edge BERT inference than the best homogeneous configuration 
+\href{https://eiw2022.github.io/assets/Proceedings.pdf}{\normalfont \color{red} \faFilePdfO \hspace{0.1cm} EIW'22}
+\href{https://dl.acm.org/doi/pdf/10.1145/3583781.3590302}{\normalfont \color{red} \faFilePdfO \hspace{0.1cm} GLSVLSI'23}
+
+% \item Built a modified ResNet with mixed-precision training to achieve 95\%, 77\% validation accuracy for CIFAR-10 and CIFAR-100, respectively in 5 minutes with single V100 GPU \href{https://github.com/HungYangChang/HAET-2021-competition-baseline-code}{\normalfont \color{red} [ICLR 2021 workshop]}
+
+\end{rSubsection}
+
+\begin{rSubsection}{Neuromorphic Devices and Architectures Research Group, IBM}{San Jose, CA, USA}{Research Intern, mentored by Dr. Geoffrey W. Burr, full-time}{Oct. 2018 - Apr. 2019}
+\item Analyzed power behavior of the circuit and modified the power-hungry structure to achieve up to 12 to 14 TOPs/s/W energy efficiency for training. \href{https://ieeexplore.ieee.org/document/8792205}{{\color{red} \faFilePdfO \hspace{0.1cm} IBM Journal of R\&D'19}}
+
+\end{rSubsection}
+
+\begin{rSubsection}{DSML Group, National Chiao Tung University}{Hsinchu, Taiwan}{Research Assistant, advised by Chair Professor Steve S. Chung}{Oct. 2017 - Oct. 2018}
+\item Built ideal-linearity neuromorphic synapses on FinFET Platform with a wide tuning-window ($20\times$) of weight-tuning capability \href{https://ieeexplore.ieee.org/document/8776488}{\color{red} \faFilePdfO \hspace{0.1cm} Symposia on VLSI'19}
+\end{rSubsection}
+
+\begin{rSubsection}{Signal Sensing and Application Lab, NTHU}{Hsinchu, Taiwan}{Undergraduate Researcher, advised by Professor Chih-Cheng Hsieh}{Feb. 2017 - Feb. 2018}
+\item 	Taped-out chip of CMOS image sensor readout circuit \href{https://ca43f59c-18e6-44e2-ac84-00cf96f52e85.filesusr.com/ugd/131064_52b3800b9c97485c9d0b2981aafdcc01.pdf}{\normalfont \color{red} \faFilePdfO \hspace{0.1cm} Chip Report}
+\item 	Cooperated with Industrial Technology Research Institute (ITRI) with USD 30,000 project funding
+\end{rSubsection}
+
+% \begin{rSubsection}{Jetek Technology Corp}{Hsinchu, Taiwan}{Chip Integration Internship}{Aug. 2017 - Sep. 2017}
+% \item Integrated two chips by C++ based on Serial Peripheral Interface(SPI)
+% \item Designed User Interface for customers to manipulate chips
+% \end{rSubsection}
+
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+{\bf McGill University, Canada} \hfill {\em Sep. 2020 - Feb. 2023} 
+\\ 	MSc \href{https://escholarship.mcgill.ca/concern/theses/bg257k93x}{\normalfont (thesis)} in Electrical \& Computer Engineering \hfill {Overall GPA: 4/4}
+
+{\bf National Tsing Hua University, Hsinchu (NTHU), Taiwan} \hfill {\em Sep. 2014 - Jun. 2018} 
+\\ 	B.S. in Electrical Engineering \hfill { Overall GPA: 3.99/4.3 (3.87/4)}
+\end{rSection}
+
+
+%---------------------------------------------------------------------------------
+% \begin{rSection}{Selected Publication (*Journal only)}
+\begin{rSection}{Selected Publication \href{https://scholar.google.com/citations?hl=en&user=TXVBQjYAAAAJ&view_op=list_works&gmla=AJsN-F5zI9RIMFMCIU-nhChg-EWECxyGUmXLAV-uxbrWYLtg_VvRP6_j0jxE7Vb-wedteD1o5aLV_i0-Q0W5fYOgJ5Fes3kHQr_ZbMxgz81j7IeJWwHOim4}{\faGraduationCap}}
+
+\begin{rSubsection}{PipeBERT: High-throughput BERT Inference for ARM Big.LITTLE Multi-core Processors, \color{red} Journal of Signal Processing Systems, IEEE SiPS 2022}{}{}
+\\
+\item \underline{Hung-Yang Chang}\rm{, Seyyed Mozafari, Cheng Chen, James Clark, Brett Meyer, and Warren Gross}
+\end{rSubsection}
+
+
+\begin{rSubsection}{AI hardware acceleration with analog memory: micro-architectures for low energy at high speed, \color{red} IBM Journal of Research and Development}{}{}
+\\
+\item \underline{Hung-Yang Chang} \rm{and Geoffrey W. Burr, Pritish Narayanan, Stefano Ambrogio, et al.}
+\end{rSubsection}
+
+
+\begin{rSubsection}{
+High-Throughput Edge Inference for BERT Models via Neural Architecture Search and Pipeline, GLSVLSI 2023 (Poster Presentation)}{}{}
+\\
+\item \underline{Hung-Yang Chang}\rm{, Seyyed Mozafari, James Clark, Brett Meyer, and Warren Gross}
+\end{rSubsection}
+
+\begin{rSubsection}{A Novel Architecture to Build Ideal-linearity Neuromorphic Synapses on a Pure Logic FinFET Platform Featuring 2.5ns PGM-time and 10$^{12}$ Endurance, 2019 Symposium on VLSI Technology (Oral Presentation)} {}{}
+\\
+\item E.R Hsieh, \underline{H. Y. Chang}\rm{, Steve S. Chung, S. Simon Wong et al.}
+\end{rSubsection}
+
+
+\end{rSection} 
+%---------------------------------------------------------------------------------
+
+
+%---------------------------------------------------------------------------------
+
+\begin{rSection}{SELECTED PROJECTS}
+% \begin{rSubsection}{Bittensor:}{\em Mar. 2023 - present}{}{}
+% \item Explored super-convergence phenomena in IBM's Analog Hardware Acceleration Kit for in-memory training of DNNs
+% \end{rSubsection}
+
+% \begin{rSubsection}{Neural Architecture Search and pipeline}{\em Aug. 2022 - Mar.2023}{Edge Intelligence Workshop 2022}{ECSE, McGill}
+
+% \item High-Throughput Edge Inference for BERT Models via NAS and Pipeline, GLSVLSI 2023 (Poster presentation) \href{https://dl.acm.org/doi/pdf/10.1145/3583781.3590302}{\normalfont \color{red} [GLSVLSI'23]}
+% \end{rSubsection}
+
+
+\begin{rSubsection}{Hardware Aware Efficient Training Competition \href{https://github.com/HungYangChang/HAET-2021-competition-baseline-code}{\normalfont \faGithub \hspace{0.1cm}}}{\em Feb. 2021 - Mar. 2021}{ICLR 2021 Workshop}{ECSE, McGill}
+
+\item  Built a modified ResNet with mixed-precision training to achieve 95\%, 77\% validation accuracy for CIFAR-10 and CIFAR-100, respectively in 5 minutes with single V100 GPU
+
+\end{rSubsection}
+
+\begin{rSubsection}{Exploring Super-Converge in Analog NNs with IBM tool \href{https://github.com/HungYangChang/ECSE552}{\normalfont \faGithub}}{\em Feb. 2021 - Apr. 2021}{Deep Learning (ECSE 552)}{ECSE, McGill}
+\item Explored super-convergence phenomena in IBM's Analog Hardware Acceleration Kit for in-memory training of DNNs
+\item Applied cyclic learning rates to VGG8, ResNet18, and LeNet architectures on MNIST and CIFAR10
+\end{rSubsection}
+
+\begin{rSubsection}{System C implementation: Design of MPSoC \href{https://github.com/HungYangChang/Applying-the-Analog-Hardware-Acceleration-Kit-for-In-memory-Computing-Design}{\normalfont \faGithub}}{\em Oct. 2020 - Dec. 2020}{Design of Multiprocessor System-on-chip (ECSE 541)}{ECSE, McGill}
+% \item Implemented a Sum of Absolute Differences (SAD) Transactional Level Model (TLM)
+% \item Implemented a TLM System-Level Hardware/Software partitioned matrix accelerator application
+\item Utilized IBM's Analog Hardware Acceleration Kit and PyTorch to simulate in-memory FCNN \& CNN computations for MNIST Dataset 
+\end{rSubsection}
+
+
+% \begin{rSubsection}{IBM Analog Kit for In-memory Computing Design  \href{https://github.com/HungYangChang/Applying-the-Analog-Hardware-Acceleration-Kit-for-In-memory-Computing-Design}{\normalfont \color{red} [Github link]}}{\em Oct. 2020 - Dec. 2020}{Design of Multiprocessor System-on-chip}{ECSE, McGill}
+% \item Evaluated analog DNNs with the simulation of device-to-device variations and non-linearity of devices
+% \item Examined computation cost and performance of design, showing 95\% accuracy can be achieved in 3-layered networks with only 3\% decrements compared to the deeper ones
+% \end{rSubsection}
+
+% \begin{rSubsection}{Machine Learning \& Deep Learning projects}{\em Oct. 2020 - Apr. 2021}{Machine Learning (ECSE 551)}{ECSE, McGill}
+% \item Data classification: Implemented a logistic regression classifier (from scratch), K-Fold Validation, and $\chi^2$ square test for feature selection in Python. Achieved accuracies of 86.2\% \& 77.4\% on hepatitis dataset and bankruptcy dataset \href{https://github.com/HungYangChang/ECSE551-mini-project-1-Linear-Classification-Logistic-Regression-}{\color{red} [Github link]}
+% \item NLP: Implemented a Bernoulli Naïve Bayes' classifier (from scratch) with binary feature encoding, TFIDF normalization, and $\chi^2$ square test for feature selection in Python for Reddit posts classification. Achieved a 93.1\% accuracy in the Kaggle competition \href{https://github.com/HungYangChang/ECSE-551-Mini-project2}{\color{red} [Github link]}
+% \item Image classification: Implemented a VGG-16 CNNs (from scratch) with image augmentation, pixel normalization, and dropout regularization in Pytorch for a customized MNIST fashion dataset. Achieved a 97.9\% accuracy in the Kaggle competition \href{https://github.com/HungYangChang/ECSE-551-Miniproject3}{\color{red} [Github link]}
+% \item Weather forecasting: Performed weather time-series forecasting using three different deep learning methods, including FCNNs, LSTM, and CNNS for regression  analysis.\href{https://github.com/HungYangChang/ECSE552_weather-forecasting}{\color{red} [Github link]}
+% \end{rSubsection}
+
+\end{rSection}
+
+
+\begin{rSection}{AWARDS \& HONORS} \itemsep -3pt  
+\begin{rSubsection}{Graduate Excellence Fellowship}{ECSE, McGill, 2022}{}{}
+
+{Awarded with 4600 CAD for 10 selected graduated students}
+\end{rSubsection}
+
+
+\begin{rSubsection}{Outstanding Project Award in Contest of Implementation}{EECS, NTHU, 2018}{}{}
+\item {Top 10 of Research project competition with more than 250 student competitors}
+\end{rSubsection}
+
+\begin{rSubsection}{International Volunteer Certification}{Ministry of Education Taiwan, 2015}{}{}
+\item {Awarded with \$1000 USD funding to host 100 people classes, and school anniversary fair in Malaysia}
+\end{rSubsection}
+
+\end{rSection} 
+%---------------------------------------------------------------------------------
+
+
+%---------------------------------------------------------------------------------
+
+% \begin{rSection}{SELECTED COURSES}
+% \itab{Applied Machine Learning (A)} \tab{}  \tab{Deep Learning   (A)}
+% \\ \itab{Embedded Memory Circuit Design (A)} \tab{} \tab{Design of Multiprocessor System-on-chip (A)}
+% % \\ \itab{Design of Multiprocessor System-on-chip (A)} \tab{}  \tab{Feedback Control Systems (A)}
+% % \\ \itab{Special Topic on Implementation (IC Design) (A)}
+% % \\ \itab{Introduction to Integrated Circuit Design (A)}  \tab{} \tab{Introduction to Solid-State Physics (A)}
+% % \\ \itab{Design of Multiprocessor System-on-chip (A)}
+% % \\ \itab{Analog Integrated Circuits Analysis and Design I\&II (Both A)}
+% \end{rSection}
+
+
+\begin{rSection}{RELATED SKILLS}
+\itab{Programming Language: Python, Pytorch, Pytest, Tensorflow, TVM, Matlab, SystemC, \LaTeX }
+\\ \itab{Engineering Tools: DevOps, gPRC, Iceberg Catalog, Flask, Docker, Kubernetes, Jira,}
+\end{rSection}
+
+
+\end{document}

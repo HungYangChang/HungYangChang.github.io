@@ -14,7 +14,7 @@ body {
 
 /* Container */
 .container {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 40px 20px;
 }
@@ -25,6 +25,8 @@ header {
     margin-bottom: 60px;
     padding-bottom: 40px;
     border-bottom: 1px solid #e5e5e5;
+    position: relative;
+    padding-top: 40px;
 }
 
 header h1 {
@@ -60,21 +62,23 @@ nav a:hover {
 
 /* Language toggle */
 .language-toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
     display: flex;
-    justify-content: center;
-    margin: 20px 0;
-    gap: 5px;
+    gap: 2px;
 }
 
 .lang-btn {
     background: none;
     border: 1px solid #0066cc;
     color: #0066cc;
-    padding: 8px 16px;
+    padding: 4px 8px;
     cursor: pointer;
     font-weight: 500;
     transition: all 0.2s ease;
-    border-radius: 4px;
+    border-radius: 3px;
+    font-size: 0.8rem;
 }
 
 .lang-btn:hover {
@@ -328,6 +332,70 @@ section h2 {
     font-weight: 600;
 }
 
+/* Pets section */
+.pets-section {
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.pets-section h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.pets-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.pet-item {
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 4px solid #0066cc;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pet-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 102, 204, 0.1);
+}
+
+.pet-photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #0066cc;
+    transition: transform 0.2s ease;
+}
+
+.pet-photo:hover {
+    transform: scale(1.05);
+}
+
+.pet-item h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.pet-item p {
+    color: #555;
+    line-height: 1.5;
+    margin: 0;
+    font-size: 0.95rem;
+}
+
 /* Skills */
 .skill-category {
     margin-bottom: 30px;
@@ -431,5 +499,15 @@ footer {
     .publication-item h3,
     .project-item h3 {
         font-size: 1rem;
+    }
+    
+    .pets-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .pet-photo {
+        width: 120px;
+        height: 120px;
     }
 }
