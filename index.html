@@ -27,11 +27,11 @@
                 </div>
             </div>
             <nav>
+                <a href="#about-education" data-en="📝 About Me" data-zh="📝 關於我">📝 About Me</a>
                 <a href="#experience" data-en="💼 Experience" data-zh="💼 工作經歷">💼 Experience</a>
                 <a href="#publications" data-en="📚 Publications" data-zh="📚 學術發表">📚 Publications</a>
-                <a href="#projects" data-en="🚀 Projects" data-zh="🚀 專案項目">🚀 Projects</a>
-                <a href="#education" data-en="🎓 Education" data-zh="🎓 學歷">🎓 Education</a>
-                <a href="#skills" data-en="⚡ Skills" data-zh="⚡ 專業技能">⚡ Skills</a>
+                <a href="#projects-1" data-en="🚀 Projects" data-zh="🚀 專案項目">🚀 Projects</a>
+                <a href="#projects-skills" data-en="⚡ Skills" data-zh="⚡ 專業技能">⚡ Skills</a>
                 <a href="#hobbies" data-en="🏠 Hobbies/Personal" data-zh="🏠 興趣愛好/個人">🏠 Hobbies/Personal</a>
             </nav>
             <div class="contact-links">
@@ -43,45 +43,48 @@
         </header>
 
         <main>
-            <section class="intro">
-                <p data-en="About me: I'm James (Hung-Yang) Chang, an AI Software Developer at Cerence, specializing in LLM function calls, edge AI, and hardware acceleration. My work focuses on optimizing AI systems for automotive applications and edge devices, combining software engineering with machine learning expertise." data-zh="我是 Cerence 的 AI 軟體開發工程師，專精於大型語言模型函數調用、邊緣 AI 與硬體加速。我的工作專注於優化車用應用與邊緣裝置的 AI 系統，結合軟體工程與機器學習專業。">About me: I'm James (Hung-Yang) Chang, an AI Software Developer at Cerence, specializing in LLM function calls, edge AI, and hardware acceleration. My work focuses on optimizing AI systems for automotive applications and edge devices, combining software engineering with machine learning expertise.</p>
-            </section>
-
-            <section id="education">
+            <section id="about-education">
                 <div class="section-header">
-                    <h2 data-en="🎓 Education" data-zh="🎓 學歷">🎓 Education</h2>
-                    <button class="minimize-btn" data-section="education" aria-label="Minimize section">−</button>
+                    <h2 data-en="📝 About Me" data-zh="📝 關於我">📝 About Me</h2>
+                    <button class="minimize-btn" data-section="about-education" aria-label="Minimize section">−</button>
                 </div>
                 <div class="section-content">
-                    <div class="education-cards-container">
-                        <!-- NTHU Card (Left) -->
-                        <div class="education-card">
-                            <div class="university-logo">
-                                <img src="picture/NTHU_Round_Seal.png" alt="National Tsing Hua University" />
+                    <div class="intro-content">
+                        <p data-en="I'm James (Hung-Yang) Chang, an AI Software Developer at Cerence, specializing in LLM function calls, edge AI, and hardware acceleration. My work focuses on optimizing AI systems for automotive applications and edge devices, combining software engineering with machine learning expertise." data-zh="我是 Cerence 的 AI 軟體開發工程師，專精於大型語言模型函數調用、邊緣 AI 與硬體加速。我的工作專注於優化車用應用與邊緣裝置的 AI 系統，結合軟體工程與機器學習專業。">About me: I'm James (Hung-Yang) Chang, an AI Software Developer at Cerence, specializing in LLM function calls, edge AI, and hardware acceleration. My work focuses on optimizing AI systems for automotive applications and edge devices, combining software engineering with machine learning expertise.</p>
+                    </div>
+                    
+                    <div class="education-section">
+                        <h3 data-en="🎓 Education" data-zh="🎓 學歷">🎓 Education</h3>
+                        <div class="education-cards-container">
+                            <!-- NTHU Card (Left) -->
+                            <div class="education-card">
+                                <div class="university-logo">
+                                    <img src="picture/NTHU_Round_Seal.png" alt="National Tsing Hua University" />
+                                </div>
+                                <div class="education-details">
+                                    <h3>B.S. in Electrical Engineering</h3>
+                                    <p class="university-name"><a href="https://dee.site.nthu.edu.tw/index.php?Lang=en" data-zh-href="https://dee.site.nthu.edu.tw/index.php?Lang=zh-tw" target="_blank" style="color: var(--link-color); text-decoration: none;" data-en="National Tsing Hua University, Hsinchu (NTHU), Taiwan" data-zh="國立清華大學電機工程學系, 新竹 (NTHU), 台灣">National Tsing Hua University, Hsinchu (NTHU), Taiwan</a></p>
+                                    <p class="education-date">Sep. 2014 - Jun. 2018</p>
+                                    <p class="education-gpa">Overall GPA: 3.99/4.3 (3.87/4)</p>
+                                </div>
                             </div>
-                            <div class="education-details">
-                                <h3>B.S. in Electrical Engineering</h3>
-                                <p class="university-name"><a href="https://dee.site.nthu.edu.tw/index.php?Lang=en" data-zh-href="https://dee.site.nthu.edu.tw/index.php?Lang=zh-tw" target="_blank" style="color: var(--link-color); text-decoration: none;" data-en="National Tsing Hua University, Hsinchu (NTHU), Taiwan" data-zh="國立清華大學電機工程學系, 新竹 (NTHU), 台灣">National Tsing Hua University, Hsinchu (NTHU), Taiwan</a></p>
-                                <p class="education-date">Sep. 2014 - Jun. 2018</p>
-                                <p class="education-gpa">Overall GPA: 3.99/4.3 (3.87/4)</p>
-                            </div>
-                        </div>
 
-                        <!-- Connecting Line -->
-                        <div class="education-connector">
-                            <div class="connector-line"></div>
-                        </div>
-
-                        <!-- McGill Card (Right) -->
-                        <div class="education-card">
-                            <div class="university-logo">
-                                <img src="picture/mcgill.png" alt="McGill University" />
+                            <!-- Connecting Line -->
+                            <div class="education-connector">
+                                <div class="connector-line"></div>
                             </div>
-                            <div class="education-details">
-                                <h3>MSc (thesis) in Electrical & Computer Engineering</h3>
-                                <p class="university-name"><a href="https://www.mcgill.ca/ece/" target="_blank" style="color: var(--link-color); text-decoration: none;">McGill University, Canada</a></p>
-                                <p class="education-date">Sep. 2020 - Feb. 2023</p>
-                                <p class="education-gpa">Overall GPA: 4/4</p>
+
+                            <!-- McGill Card (Right) -->
+                            <div class="education-card">
+                                <div class="university-logo">
+                                    <img src="picture/mcgill.png" alt="McGill University" />
+                                </div>
+                                <div class="education-details">
+                                    <h3>MSc (thesis) in Electrical & Computer Engineering</h3>
+                                    <p class="university-name"><a href="https://www.mcgill.ca/ece/" target="_blank" style="color: var(--link-color); text-decoration: none;">McGill University, Canada</a></p>
+                                    <p class="education-date">Sep. 2020 - Feb. 2023</p>
+                                    <p class="education-gpa">Overall GPA: 4/4</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -91,12 +94,13 @@
             <section id="experience">
                 <div class="section-header">
                     <h2 data-en="💼 Experience" data-zh="💼 工作經歷">💼 Experience</h2>
+                    <button class="minimize-btn" data-section="experience" aria-label="Minimize section">−</button>
                 </div>
                 <div class="section-content">
                 
                 <div class="experience-item">
                     <div class="experience-header">
-                        <h3 data-en="AI Software Developer, <a href="https://www.cerence.com/" target="_blank" style="color: var(--link-color); text-decoration: none;"></h3>Cerence</a>" data-zh="AI 軟體開發工程師, <a href="https://www.cerence.com/" target="_blank" style="color: var(--link-color); text-decoration: none;">Cerence</a>">AI Software Developer, <a href="https://www.cerence.com/" target="_blank" style="color: var(--link-color); text-decoration: none;">Cerence</a></h3>
+                        <h3 data-en="AI Software Developer, <a href=&quot;https://www.cerence.com/&quot; target=&quot;_blank&quot; style=&quot;color: var(--link-color); text-decoration: none;&quot;>Cerence</a>" data-zh="AI 軟體開發工程師, <a href=&quot;https://www.cerence.com/&quot; target=&quot;_blank&quot; style=&quot;color: var(--link-color); text-decoration: none;&quot;>Cerence</a>">AI Software Developer, <a href="https://www.cerence.com/" target="_blank" style="color: var(--link-color); text-decoration: none;"></a>Cerence</a></h3>
                         <span class="date">Aug. 2023 - Present</span>
                     </div>
                     <ul>
@@ -107,7 +111,7 @@
 
                 <div class="experience-item">
                     <div class="experience-header">
-                        <h3 data-en="Machine Learning Engineer, <a href="https://bittensor.com/about" target="_blank" style="color: var(--link-color); text-decoration: none;">Bittensor</a>, <a href="https://bittensor.com/about" target="_blank" style="color: var(--link-color); text-decoration: none;">Opentensor</a>" data-zh="機器學習工程師, <a href="https://bittensor.com/about" target="_blank" style="color: var(--link-color); text-decoration: none;">Bittensor</a> (Open-source ML), <a href="https://bittensor.com/about" target="_blank" style="color: var(--link-color); text-decoration: none;">Opentensor</a>">Machine Learning Engineer, <a href="https://bittensor.com/about" target="_blank" style="color: var(--link-color); text-decoration: none;">Bittensor</a>, <a href="https://bittensor.com/about" target="_blank" style="color: var(--link-color); text-decoration: none;">Opentensor</a></h3>
+                        <h3 data-en="Machine Learning Engineer, <a href=&quot;https://bittensor.com/about&quot; target=&quot;_blank&quot; style=&quot;color: var(--link-color); text-decoration: none;&quot;>Bittensor</a>, <a href=&quot;https://bittensor.com/about&quot; target=&quot;_blank&quot; style=&quot;color: var(--link-color); text-decoration: none;&quot;>Opentensor</a>" data-zh="機器學習工程師, <a href=&quot;https://bittensor.com/about&quot; target=&quot;_blank&quot; style=&quot;color: var(--link-color); text-decoration: none;&quot;>Bittensor</a> (Open-source ML), <a href=&quot;https://bittensor.com/about&quot; target=&quot;_blank&quot; style=&quot;color: var(--link-color); text-decoration: none;&quot;>Opentensor</a>">Machine Learning Engineer, <a href="https://bittensor.com/about" target="_blank" style="color: var(--link-color); text-decoration: none;"></a>Bittensor</a>, <a href="https://bittensor.com/about" target="_blank" style="color: var(--link-color); text-decoration: none;">Opentensor</a></h3>
                         <span class="date">Mar. 2023 - Jul. 2023</span>
                     </div>
                     <ul>
@@ -118,7 +122,7 @@
 
                 <div class="experience-item">
                     <div class="experience-header">
-                        <h3 data-en="Graduate Research Assistant, <a href="https://meil.ece.mcgill.ca/" target="_blank" style="color: var(--link-color); text-decoration: none;">McGill Edge Intelligence Lab</a>, McGill" data-zh="研究生研究助理, <a href="https://meil.ece.mcgill.ca/" target="_blank" style="color: var(--link-color); text-decoration: none;">McGill Edge Intelligence Lab</a>, McGill">Graduate Research Assistant, <a href="https://meil.ece.mcgill.ca/" target="_blank" style="color: var(--link-color); text-decoration: none;">McGill Edge Intelligence Lab</a>, McGill</h3>
+                        <h3 data-en="Graduate Research Assistant, <a href=&quot;https://meil.ece.mcgill.ca/&quot; target=&quot;_blank&quot; style=&quot;color: var(--link-color); text-decoration: none;&quot;>McGill Edge Intelligence Lab</a>" data-zh="研究生研究助理, <a href=&quot;https://meil.ece.mcgill.ca/&quot; target=&quot;_blank&quot; style=&quot;color: var(--link-color); text-decoration: none;&quot;>McGill Edge Intelligence Lab</a>">Graduate Research Assistant, <a href="https://meil.ece.mcgill.ca/" target="_blank" style="color: var(--link-color); text-decoration: none;">McGill Edge Intelligence Lab</a></h3>
                         <span class="date">Sep. 2020 - Feb. 2023</span>
                     </div>
                     <ul>
@@ -139,7 +143,7 @@
 
                 <div class="experience-item">
                     <div class="experience-header">
-                        <h3 data-en="Research Assistant, <a href="https://dsml411.github.io/dsml/en_about.html" target="_blank" style="color: var(--link-color); text-decoration: none;">NCTU DSML Group</a>" data-zh="研究助理, <a href="https://dsml411.github.io/dsml/en_about.html" target="_blank" style="color: var(--link-color); text-decoration: none;">NCTU DSML Group</a>">Research Assistant, <a href="https://dsml411.github.io/dsml/en_about.html" target="_blank" style="color: var(--link-color); text-decoration: none;">NCTU DSML Group</a></h3>
+                        <h3 data-en="Research Assistant, <a href=&quot;https://dsml411.github.io/dsml/en_about.html&quot; target=&quot;_blank&quot; style=&quot;color: var(--link-color); text-decoration: none;&quot;>NCTU DSML Group</a>" data-zh="研究助理, <a href=&quot;https://dsml411.github.io/dsml/en_about.html&quot; target=&quot;_blank&quot; style=&quot;color: var(--link-color); text-decoration: none;&quot;>NCTU DSML Group</a>">Research Assistant, <a href="https://dsml411.github.io/dsml/en_about.html" target="_blank" style="color: var(--link-color); text-decoration: none;">NCTU DSML Group</a></h3>
                         <span class="date">Oct. 2017 - Oct. 2018</span>
                     </div>
                     <ul>
@@ -149,7 +153,7 @@
 
                 <div class="experience-item">
                     <div class="experience-header">
-                        <h3 data-en="Undergraduate Researcher, <a href="https://sisal.ee.nthu.edu.tw/" target="_blank" style="color: var(--link-color); text-decoration: none;">NTHU SISAL</a>" data-zh="大學部研究員, <a href="https://sisal.ee.nthu.edu.tw/" target="_blank" style="color: var(--link-color); text-decoration: none;">NTHU SISAL</a>">Undergraduate Researcher, <a href="https://sisal.ee.nthu.edu.tw/" target="_blank" style="color: var(--link-color); text-decoration: none;">NTHU SISAL</a></h3>
+                        <h3 data-en="Undergraduate Researcher, <a href=&quot;https://sisal.ee.nthu.edu.tw/&quot; target=&quot;_blank&quot; style=&quot;color: var(--link-color); text-decoration: none;&quot;>NTHU SISAL</a>" data-zh="大學部研究員, <a href=&quot;https://sisal.ee.nthu.edu.tw/&quot; target=&quot;_blank&quot; style=&quot;color: var(--link-color); text-decoration: none;&quot;>NTHU SISAL</a>">Undergraduate Researcher, <a href="https://sisal.ee.nthu.edu.tw/" target="_blank" style="color: var(--link-color); text-decoration: none;">NTHU SISAL</a></h3>
                         <span class="date">Feb. 2017 - Feb. 2018</span>
                     </div>
                     <ul>
@@ -162,7 +166,7 @@
 
             <section id="publications">
                 <div class="section-header">
-                    <h2 data-en="📚 Selected Publications" data-zh="📚 精選學術發表"></h2>
+                    <h2 data-en="📚 Selected Publications" data-zh="📚 精選學術發表">📚 Selected Publications</h2>
                     <button class="minimize-btn" data-section="publications" aria-label="Minimize section">−</button>
                 </div>
                 <div class="section-content">
@@ -193,10 +197,10 @@
                 </div>
             </section>
 
-            <section id="projects">
+            <section id="projects-1">
                 <div class="section-header">
-                    <h2 data-en="🚀 Selected Projects" data-zh="🚀 精選專案項目">🚀 Selected Projects</h2>
-                    <button class="minimize-btn" data-section="projects" aria-label="Minimize section">−</button>
+                    <h2 data-en="🚀 Projects" data-zh="🚀 專案項目">🚀 Projects</h2>
+                    <button class="minimize-btn" data-section="projects-1" aria-label="Minimize section">−</button>
                 </div>
                 <div class="section-content">
                 
@@ -220,31 +224,34 @@
                 </div>
             </section>
 
-            <section id="skills">
+            <section id="projects-skills">
                 <div class="section-header">
                     <h2 data-en="⚡ Skills" data-zh="⚡ 專業技能">⚡ Skills</h2>
-                    <button class="minimize-btn" data-section="skills" aria-label="Minimize section">−</button>
+                    <button class="minimize-btn" data-section="projects-skills" aria-label="Minimize section">−</button>
                 </div>
                 <div class="section-content">
-                
-                <div class="skill-category">
-                    <h3 data-en="Programming Languages" data-zh="程式語言">Programming Languages</h3>
-                    <p>Python, Pytorch, Pytest, Tensorflow, TVM, Matlab, SystemC, LATEX</p>
-                </div>
+                    
+                    <div class="skills-section">
+                        
+                        <div class="skill-category">
+                            <h4 data-en="Programming Languages" data-zh="程式語言">Programming Languages</h4>
+                            <p>Python, Pytorch, Pytest, Tensorflow, TVM, Matlab, SystemC, LATEX</p>
+                        </div>
 
-                <div class="skill-category">
-                    <h3 data-en="Engineering Tools" data-zh="工程工具">Engineering Tools</h3>
-                    <p>DevOps, gPRC, Iceberg Catalog, MCP, Google A2A, Flask, Docker, Kubernetes, Jira</p>
-                </div>
+                        <div class="skill-category">
+                            <h4 data-en="Engineering Tools" data-zh="工程工具">Engineering Tools</h4>
+                            <p>DevOps, gPRC, Iceberg Catalog, MCP, Google A2A, Flask, Docker, Kubernetes, Jira</p>
+                        </div>
 
-                <div class="skill-category">
-                    <h3 data-en="Awards & Honors" data-zh="獎項與榮譽">Awards & Honors</h3>
-                    <ul>
-                        <li data-en="<strong>Graduate Excellence Fellowship</strong> - Awarded with 4600 CAD for 10 selected graduated students (ECSE, McGill, 2022)" data-zh="<strong>研究生卓越獎學金</strong> - 為 10 名選定研究生頒發 4600 加元（ECSE, McGill, 2022）"><strong>Graduate Excellence Fellowship</strong> - Awarded with 4600 CAD for 10 selected graduated students (ECSE, McGill, 2022)</li>
-                        <li data-en="<strong>Outstanding Project Award in Contest of Implementation</strong> - Top 10 of Research project competition with more than 250 student competitors (EECS, NTHU, 2018)" data-zh="<strong>實作競賽優秀專案獎</strong> - 在超過 250 名學生競爭者的研究專案競賽中名列前 10 名（EECS, NTHU, 2018）"><strong>Outstanding Project Award in Contest of Implementation</strong> - Top 10 of Research project competition with more than 250 student competitors (EECS, NTHU, 2018)</li>
-                        <li data-en="<strong>International Volunteer Certification</strong> - Awarded with $1000 USD funding to host 100 people classes, and school anniversary fair in Malaysia (Ministry of Education Taiwan, 2015)" data-zh="<strong>國際志工證書</strong> - 獲得 1000 美元資助，在馬來西亞舉辦 100 人課程和校慶博覽會（台灣教育部，2015）"><strong>International Volunteer Certification</strong> - Awarded with $1000 USD funding to host 100 people classes, and school anniversary fair in Malaysia (Ministry of Education Taiwan, 2015)</li>
-                    </ul>
-                </div>
+                        <div class="skill-category">
+                            <h4 data-en="Awards & Honors" data-zh="獎項與榮譽">Awards & Honors</h4>
+                            <ul>
+                                <li data-en="<strong>Graduate Excellence Fellowship</strong> - Awarded with 4600 CAD for 10 selected graduated students (ECSE, McGill, 2022)" data-zh="<strong>研究生卓越獎學金</strong> - 為 10 名選定研究生頒發 4600 加元（ECSE, McGill, 2022）"><strong>Graduate Excellence Fellowship</strong> - Awarded with 4600 CAD for 10 selected graduated students (ECSE, McGill, 2022)</li>
+                                <li data-en="<strong>Outstanding Project Award in Contest of Implementation</strong> - Top 10 of Research project competition with more than 250 student competitors (EECS, NTHU, 2018)" data-zh="<strong>實作競賽優秀專案獎</strong> - 在超過 250 名學生競爭者的研究專案競賽中名列前 10 名（EECS, NTHU, 2018）"><strong>Outstanding Project Award in Contest of Implementation</strong> - Top 10 of Research project competition with more than 250 student competitors (EECS, NTHU, 2018)</li>
+                                <li data-en="<strong>International Volunteer Certification</strong> - Awarded with $1000 USD funding to host 100 people classes, and school anniversary fair in Malaysia (Ministry of Education Taiwan, 2015)" data-zh="<strong>國際志工證書</strong> - 獲得 1000 美元資助，在馬來西亞舉辦 100 人課程和校慶博覽會（台灣教育部，2015）"><strong>International Volunteer Certification</strong> - Awarded with $1000 USD funding to host 100 people classes, and school anniversary fair in Malaysia (Ministry of Education Taiwan, 2015)</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </section>
 

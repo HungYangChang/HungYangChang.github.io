@@ -669,6 +669,48 @@ section.minimized {
     }
 }
 
+/* Awards section styling */
+.awards-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    border: 1px solid var(--card-border);
+}
+
+.awards-section h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--header-color);
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.awards-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.awards-section li {
+    margin-bottom: 12px;
+    padding: 8px 0;
+    line-height: 1.5;
+    color: var(--text-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.awards-section li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.awards-section strong {
+    color: var(--link-color);
+    font-weight: 600;
+}
+
 /* Hobbies section */
 .hobby-grid {
     display: grid;
@@ -711,7 +753,47 @@ section.minimized {
     font-weight: 600;
 }
 
-/* Hobbies section - Improved Design */
+/* New section structure styling */
+.intro-content {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    border: 1px solid var(--card-border);
+}
+
+.education-section {
+    margin-top: 20px;
+}
+
+.education-section h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--header-color);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.projects-section, .skills-section {
+    margin-bottom: 30px;
+}
+
+.projects-section h3, .skills-section h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--header-color);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.skill-category h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--header-color);
+    margin-bottom: 10px;
+}
 .hobbies-category {
     margin-bottom: 40px;
 }
