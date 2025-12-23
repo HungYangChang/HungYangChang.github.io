@@ -58,6 +58,34 @@ nav a:hover {
     color: #0066cc;
 }
 
+/* Language toggle */
+.language-toggle {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 5px;
+}
+
+.lang-btn {
+    background: none;
+    border: 1px solid #0066cc;
+    color: #0066cc;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    border-radius: 4px;
+}
+
+.lang-btn:hover {
+    background-color: #f0f8ff;
+}
+
+.lang-btn.active {
+    background-color: #0066cc;
+    color: white;
+}
+
 /* Contact links */
 .contact-links {
     display: flex;

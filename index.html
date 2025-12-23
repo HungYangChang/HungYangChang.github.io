@@ -10,16 +10,20 @@
 <body>
     <div class="container">
         <header>
-            <h1>James (Hung-Yang) Chang</h1>
-            <p class="subtitle">AI Software Developer & Machine Learning Engineer</p>
+            <h1 data-en="James (Hung-Yang) Chang" data-zh="張宏暘 (James Chang)">James (Hung-Yang) Chang</h1>
+            <p class="subtitle" data-en="AI Software Developer & Machine Learning Engineer" data-zh="AI 軟體開發工程師 & 機器學習工程師">AI Software Developer & Machine Learning Engineer</p>
             <nav>
-                <a href="#experience">Experience</a>
-                <a href="#publications">Publications</a>
-                <a href="#projects">Projects</a>
-                <a href="#education">Education</a>
-                <a href="#hobbies">Hobbies</a>
-                <a href="#skills">Skills</a>
+                <a href="#experience" data-en="Experience" data-zh="工作經歷">Experience</a>
+                <a href="#publications" data-en="Publications" data-zh="學術發表">Publications</a>
+                <a href="#projects" data-en="Projects" data-zh="專案項目">Projects</a>
+                <a href="#education" data-en="Education" data-zh="學歷">Education</a>
+                <a href="#hobbies" data-en="Hobbies" data-zh="興趣愛好">Hobbies</a>
+                <a href="#skills" data-en="Skills" data-zh="專業技能">Skills</a>
             </nav>
+            <div class="language-toggle">
+                <button id="lang-en" class="lang-btn active">EN</button>
+                <button id="lang-zh" class="lang-btn">中文</button>
+            </div>
             <div class="contact-links">
                 <a href="mailto:hychangee@gmail.com" class="contact-link">Email</a>
                 <a href="https://www.linkedin.com/in/hungyang/" class="contact-link" target="_blank">LinkedIn</a>
@@ -30,208 +34,243 @@
 
         <main>
             <section class="intro">
-                <p>I'm James Chang, an AI Software Developer at Cerence, specializing in LLM function calls, edge AI, and hardware acceleration. My work focuses on optimizing AI systems for automotive applications and edge devices, combining software engineering with machine learning expertise.</p>
+                <p data-en="I'm James Chang, an AI Software Developer at Cerence, specializing in LLM function calls, edge AI, and hardware acceleration. My work focuses on optimizing AI systems for automotive applications and edge devices, combining software engineering with machine learning expertise." data-zh="我是 Cerence 的 AI 軟體開發工程師，專精於大型語言模型函數調用、邊緣 AI 與硬體加速。我的工作專注於優化車用應用與邊緣裝置的 AI 系統，結合軟體工程與機器學習專業。">I'm James Chang, an AI Software Developer at Cerence, specializing in LLM function calls, edge AI, and hardware acceleration. My work focuses on optimizing AI systems for automotive applications and edge devices, combining software engineering with machine learning expertise.</p>
             </section>
 
             <section id="experience">
-                <h2>Experience</h2>
+                <h2 data-en="Experience" data-zh="工作經歷">Experience</h2>
                 
                 <div class="experience-item">
                     <div class="experience-header">
-                        <h3>AI Software Developer</h3>
+                        <h3 data-en="AI Software Developer" data-zh="AI 軟體開發工程師">AI Software Developer</h3>
                         <span class="company">Cerence</span>
                         <span class="date">Aug. 2023 - Present</span>
                     </div>
                     <ul>
-                        <li>Developed and integrated LLM function call algorithms (Back-end) with automotive console UX/UI (Front-end) to enhance in-car user experience</li>
-                        <li>Designed and implemented a robust testing framework for LLM function calls, including unit tests, contract tests, and user acceptance tests to ensure system reliability and performance</li>
+                        <li data-en="Developed and integrated LLM function call algorithms (Back-end) with automotive console UX/UI (Front-end) to enhance in-car user experience" data-zh="開發並整合大型語言模型函數調用演算法（後端）與車用控制台 UX/UI（前端），以提升車內用戶體驗">Developed and integrated LLM function call algorithms (Back-end) with automotive console UX/UI (Front-end) to enhance in-car user experience</li>
+                        <li data-en="Designed and implemented a robust testing framework for LLM function calls, including unit tests, contract tests, and user acceptance tests to ensure system reliability and performance" data-zh="為大型語言模型函數調用設計並實現強大的測試框架，包括單元測試、合約測試和用戶驗收測試，以確保系統可靠性和性能">Designed and implemented a robust testing framework for LLM function calls, including unit tests, contract tests, and user acceptance tests to ensure system reliability and performance</li>
                     </ul>
                 </div>
 
                 <div class="experience-item">
                     <div class="experience-header">
-                        <h3>Machine Learning Engineer</h3>
+                        <h3 data-en="Machine Learning Engineer" data-zh="機器學習工程師">Machine Learning Engineer</h3>
                         <span class="company">Bittensor (Open-source ML), Opentensor</span>
                         <span class="date">Mar. 2023 - Jul. 2023</span>
                     </div>
                     <ul>
-                        <li>Fine-tuned multiple language models and built an ensemble model of them on <a href="https://github.com/opentensor/bittensor" target="_blank" style="color: #0066cc;">Bittensor project</a>, outperforming GPT-4 and other models on text prompting based on Bittensor reward mechanism</li>
-                        <li>Built multi-modality of the Bittensor network, which includes text-to-image, text-to-video, text-to-music, and more subnets</li>
+                        <li data-en="Fine-tuned multiple language models and built an ensemble model of them on Bittensor project, outperforming GPT-4 and other models on text prompting based on Bittensor reward mechanism" data-zh="在 Bittensor 專案上微調多個語言模型並建立集成模型，基於 Bittensor 獎勵機制在文本提示方面超越 GPT-4 和其他模型">Fine-tuned multiple language models and built an ensemble model of them on <a href="https://github.com/opentensor/bittensor" target="_blank" style="color: #0066cc;">Bittensor project</a>, outperforming GPT-4 and other models on text prompting based on Bittensor reward mechanism</li>
+                        <li data-en="Built multi-modality of the Bittensor network, which includes text-to-image, text-to-video, text-to-music, and more subnets" data-zh="建立 Bittensor 網絡的多模態，包括文本到圖像、文本到影片、文本到音樂等子網絡">Built multi-modality of the Bittensor network, which includes text-to-image, text-to-video, text-to-music, and more subnets</li>
                     </ul>
                 </div>
 
                 <div class="experience-item">
                     <div class="experience-header">
-                        <h3>Graduate Research Assistant</h3>
+                        <h3 data-en="Graduate Research Assistant" data-zh="研究生研究助理">Graduate Research Assistant</h3>
                         <span class="company">McGill Edge Intelligence Lab, McGill</span>
                         <span class="date">Sep. 2020 - Feb. 2023</span>
                     </div>
                     <ul>
-                        <li>Proposed a pipeline framework to utilize heterogeneous resources in edge devices, achieving 49% higher throughput and 61% lower energy-delay product in edge BERT inference than the best homogeneous configuration (<a href="https://link.springer.com/article/10.1007/s11265-022-01814-y" target="_blank" style="color: #0066cc;">JSPS'22</a>)</li>
-                        <li>Integrated Neural Architecture Search and pipeline on BERT model, achieving 9x higher inference throughput with only 1.3% decrease in accuracy in edge BERT inference than the best homogeneous configuration (<a href="https://eiw2022.github.io/assets/Proceedings.pdf" target="_blank" style="color: #0066cc;">EIW'22</a>, <a href="https://dl.acm.org/doi/pdf/10.1145/3583781.3590302" target="_blank" style="color: #0066cc;">GLSVLSI'23</a>)</li>
+                        <li data-en="Proposed a pipeline framework to utilize heterogeneous resources in edge devices, achieving 49% higher throughput and 61% lower energy-delay product in edge BERT inference than the best homogeneous configuration (JSPS'22)" data-zh="提出利用邊緣裝置異構資源的管線框架，在邊緣 BERT 推論中實現比最佳同質配置高 49% 的吞吐量和低 61% 的能耗延遲積 (JSPS'22)">Proposed a pipeline framework to utilize heterogeneous resources in edge devices, achieving 49% higher throughput and 61% lower energy-delay product in edge BERT inference than the best homogeneous configuration (<a href="https://link.springer.com/article/10.1007/s11265-022-01814-y" target="_blank" style="color: #0066cc;">JSPS'22</a>)</li>
+                        <li data-en="Integrated Neural Architecture Search and pipeline on BERT model, achieving 9x higher inference throughput with only 1.3% decrease in accuracy in edge BERT inference than the best homogeneous configuration (EIW'22, GLSVLSI'23)" data-zh="在 BERT 模型上整合神經架構搜尋和管線，在邊緣 BERT 推論中實現比最佳同質配置高 9 倍的推論吞吐量，準確率僅下降 1.3% (EIW'22, GLSVLSI'23)">Integrated Neural Architecture Search and pipeline on BERT model, achieving 9x higher inference throughput with only 1.3% decrease in accuracy in edge BERT inference than the best homogeneous configuration (<a href="https://eiw2022.github.io/assets/Proceedings.pdf" target="_blank" style="color: #0066cc;">EIW'22</a>, <a href="https://dl.acm.org/doi/pdf/10.1145/3583781.3590302" target="_blank" style="color: #0066cc;">GLSVLSI'23</a>)</li>
                     </ul>
                 </div>
 
                 <div class="experience-item">
                     <div class="experience-header">
-                        <h3>Research Intern</h3>
+                        <h3 data-en="Research Intern" data-zh="研究實習生">Research Intern</h3>
                         <span class="company">Neuromorphic Devices and Architectures Research Group, IBM</span>
                         <span class="date">Oct. 2018 - Apr. 2019</span>
                     </div>
                     <ul>
-                        <li>Analyzed power behavior of the circuit and modified the power-hungry structure to achieve up to 12 to 14 TOPs/s/W energy efficiency for training (<a href="https://ieeexplore.ieee.org/document/8792205" target="_blank" style="color: #0066cc;">IBM Journal of R&D'19</a>)</li>
+                        <li data-en="Analyzed power behavior of the circuit and modified the power-hungry structure to achieve up to 12 to 14 TOPs/s/W energy efficiency for training (IBM Journal of R&D'19)" data-zh="分析電路的功耗行為並修改高功耗結構，實現高達 12-14 TOPs/s/W 的訓練能源效率 (IBM Journal of R&D'19)">Analyzed power behavior of the circuit and modified the power-hungry structure to achieve up to 12 to 14 TOPs/s/W energy efficiency for training (<a href="https://ieeexplore.ieee.org/document/8792205" target="_blank" style="color: #0066cc;">IBM Journal of R&D'19</a>)</li>
                     </ul>
                 </div>
 
                 <div class="experience-item">
                     <div class="experience-header">
-                        <h3>Research Assistant</h3>
+                        <h3 data-en="Research Assistant" data-zh="研究助理">Research Assistant</h3>
                         <span class="company">DSML Group, National Chiao Tung University</span>
                         <span class="date">Oct. 2017 - Oct. 2018</span>
                     </div>
                     <ul>
-                        <li>Built ideal-linearity neuromorphic synapses on FinFET Platform with a wide tuning-window (20x) of weight-tuning capability (<a href="https://ieeexplore.ieee.org/document/8776488" target="_blank" style="color: #0066cc;">Symposia on VLSI'19</a>)</li>
+                        <li data-en="Built ideal-linearity neuromorphic synapses on FinFET Platform with a wide tuning-window (20x) of weight-tuning capability (Symposia on VLSI'19)" data-zh="在 FinFET 平台上建立理想線性神經形態突觸，具有寬調整窗口（20倍）的權重調整能力 (Symposia on VLSI'19)">Built ideal-linearity neuromorphic synapses on FinFET Platform with a wide tuning-window (20x) of weight-tuning capability (<a href="https://ieeexplore.ieee.org/document/8776488" target="_blank" style="color: #0066cc;">Symposia on VLSI'19</a>)</li>
                     </ul>
                 </div>
 
                 <div class="experience-item">
                     <div class="experience-header">
-                        <h3>Undergraduate Researcher</h3>
+                        <h3 data-en="Undergraduate Researcher" data-zh="大學部研究員">Undergraduate Researcher</h3>
                         <span class="company">Signal Sensing and Application Lab, NTHU</span>
                         <span class="date">Feb. 2017 - Feb. 2018</span>
                     </div>
                     <ul>
-                        <li>Taped-out chip of CMOS image sensor readout circuit (<a href="https://ca43f59c-18e6-44e2-ac84-00cf96f52e85.filesusr.com/ugd/131064_52b3800b9c97485c9d0b2981aafdcc01.pdf" target="_blank" style="color: #0066cc;">Chip Report</a>)</li>
-                        <li>Cooperated with Industrial Technology Research Institute (ITRI) with USD 30,000 project funding</li>
+                        <li data-en="Taped-out chip of CMOS image sensor readout circuit (Chip Report)" data-zh="CMOS 影像感測器讀取電路的晶片流片 (晶片報告)">Taped-out chip of CMOS image sensor readout circuit (<a href="https://ca43f59c-18e6-44e2-ac84-00cf96f52e85.filesusr.com/ugd/131064_52b3800b9c97485c9d0b2981aafdcc01.pdf" target="_blank" style="color: #0066cc;">Chip Report</a>)</li>
+                        <li data-en="Cooperated with Industrial Technology Research Institute (ITRI) with USD 30,000 project funding" data-zh="與工業技術研究院（ITRI）合作，獲得 30,000 美元專案資助">Cooperated with Industrial Technology Research Institute (ITRI) with USD 30,000 project funding</li>
                     </ul>
                 </div>
             </section>
 
             <section id="publications">
-                <h2>Selected Publications</h2>
+                <h2 data-en="Selected Publications" data-zh="精選學術發表">Selected Publications</h2>
                 
                 <div class="publication-item">
-                    <h3>PipeBERT: High-throughput BERT Inference for ARM Big.LITTLE Multi-core Processors</h3>
+                    <h3 data-en="PipeBERT: High-throughput BERT Inference for ARM Big.LITTLE Multi-core Processors" data-zh="PipeBERT: ARM Big.LITTLE 多核心處理器的高吞吐量 BERT 推論">PipeBERT: High-throughput BERT Inference for ARM Big.LITTLE Multi-core Processors</h3>
                     <p class="publication-venue">Journal of Signal Processing Systems, IEEE SIPS 2022</p>
                     <p class="publication-authors">Hung-Yang Chang, Seyyed Mozafari, Cheng Chen, James Clark, Brett Meyer, and Warren Gross</p>
                 </div>
 
                 <div class="publication-item">
-                    <h3>AI hardware acceleration with analog memory: micro-architectures for low energy at high speed</h3>
+                    <h3 data-en="AI hardware acceleration with analog memory: micro-architectures for low energy at high speed" data-zh="使用類比記憶體的 AI 硬體加速：高速低能耗的微架構">AI hardware acceleration with analog memory: micro-architectures for low energy at high speed</h3>
                     <p class="publication-venue">IBM Journal of Research and Development</p>
                     <p class="publication-authors">Hung-Yang Chang and Geoffrey W. Burr, Pritish Narayanan, Stefano Ambrogio, et al.</p>
                 </div>
 
                 <div class="publication-item">
-                    <h3>High-Throughput Edge Inference for BERT Models via Neural Architecture Search and Pipeline</h3>
+                    <h3 data-en="High-Throughput Edge Inference for BERT Models via Neural Architecture Search and Pipeline" data-zh="透過神經架構搜尋與管線實現 BERT 模型的高吞吐量邊緣推論">High-Throughput Edge Inference for BERT Models via Neural Architecture Search and Pipeline</h3>
                     <p class="publication-venue">GLSVLSI 2023 (Poster Presentation)</p>
                     <p class="publication-authors">Hung-Yang Chang, Seyyed Mozafari, James Clark, Brett Meyer, and Warren Gross</p>
                 </div>
 
                 <div class="publication-item">
-                    <h3>A Novel Architecture to Build Ideal-linearity Neuromorphic Synapses on a Pure Logic FinFET Platform Featuring 2.5ns PGM-time and 10^12 Endurance</h3>
+                    <h3 data-en="A Novel Architecture to Build Ideal-linearity Neuromorphic Synapses on a Pure Logic FinFET Platform Featuring 2.5ns PGM-time and 10^12 Endurance" data-zh="在純邏輯 FinFET 平台上建構理想線性神經形態突觸的新穎架構，具有 2.5ns 程式化時間和 10^12 耐久性">A Novel Architecture to Build Ideal-linearity Neuromorphic Synapses on a Pure Logic FinFET Platform Featuring 2.5ns PGM-time and 10^12 Endurance</h3>
                     <p class="publication-venue">2019 Symposium on VLSI Technology (Oral Presentation)</p>
                     <p class="publication-authors">E.R Hsieh, H. Y. Chang, Steve S. Chung, S. Simon Wong et al.</p>
                 </div>
             </section>
 
             <section id="projects">
-                <h2>Selected Projects</h2>
+                <h2 data-en="Selected Projects" data-zh="精選專案項目">Selected Projects</h2>
                 
                 <div class="project-item">
-                    <h3>Hardware Aware Efficient Training Competition (ICLR 2021 Workshop) <a href="https://github.com/HungYangChang/HAET-2021-competition-baseline-code" target="_blank" style="color: #0066cc; font-size: 0.9em;">[GitHub]</a></h3>
+                    <h3 data-en="Hardware Aware Efficient Training Competition (ICLR 2021 Workshop) [GitHub]" data-zh="硬體感知高效訓練競賽 (ICLR 2021 Workshop) [GitHub]">Hardware Aware Efficient Training Competition (ICLR 2021 Workshop) <a href="https://github.com/HungYangChang/HAET-2021-competition-baseline-code" target="_blank" style="color: #0066cc; font-size: 0.9em;">[GitHub]</a></h3>
                     <p class="project-date">Feb. 2021 - Mar. 2021, ECSE, McGill</p>
-                    <p>Built a modified ResNet with mixed-precision training to achieve 95%, 77% validation accuracy for CIFAR-10 and CIFAR-100, respectively in 5 minutes with single V100 GPU</p>
+                    <p data-en="Built a modified ResNet with mixed-precision training to achieve 95%, 77% validation accuracy for CIFAR-10 and CIFAR-100, respectively in 5 minutes with single V100 GPU" data-zh="建立具有混合精度訓練的修改版 ResNet，在單個 V100 GPU 上 5 分鐘內分別為 CIFAR-10 和 CIFAR-100 實現 95%、77% 的驗證準確率">Built a modified ResNet with mixed-precision training to achieve 95%, 77% validation accuracy for CIFAR-10 and CIFAR-100, respectively in 5 minutes with single V100 GPU</p>
                 </div>
 
                 <div class="project-item">
-                    <h3>Exploring Super-Converge in Analog NNs with IBM tool (Deep Learning (ECSE 552)) <a href="https://github.com/HungYangChang/ECSE552" target="_blank" style="color: #0066cc; font-size: 0.9em;">[GitHub]</a></h3>
+                    <h3 data-en="Exploring Super-Converge in Analog NNs with IBM tool (Deep Learning (ECSE 552)) [GitHub]" data-zh="使用 IBM 工具探索類比神經網路的超收斂現象 (Deep Learning (ECSE 552)) [GitHub]">Exploring Super-Converge in Analog NNs with IBM tool (Deep Learning (ECSE 552)) <a href="https://github.com/HungYangChang/ECSE552" target="_blank" style="color: #0066cc; font-size: 0.9em;">[GitHub]</a></h3>
                     <p class="project-date">Feb. 2021 - Apr. 2021, ECSE, McGill</p>
-                    <p>Explored super-convergence phenomena in IBMs Analog Hardware Acceleration Kit for in-memory training of DNNs. Applied cyclic learning rates to VGG8, ResNet18, and LeNet architectures on MNIST and CIFAR10</p>
+                    <p data-en="Explored super-convergence phenomena in IBMs Analog Hardware Acceleration Kit for in-memory training of DNNs. Applied cyclic learning rates to VGG8, ResNet18, and LeNet architectures on MNIST and CIFAR10" data-zh="探索 IBM 類比硬體加速套件中超收斂現象的記憶體內 DNN 訓練。將循環學習率應用於 MNIST 和 CIFAR10 上的 VGG8、ResNet18 和 LeNet 架構">Explored super-convergence phenomena in IBMs Analog Hardware Acceleration Kit for in-memory training of DNNs. Applied cyclic learning rates to VGG8, ResNet18, and LeNet architectures on MNIST and CIFAR10</p>
                 </div>
 
                 <div class="project-item">
-                    <h3>System C implementation: Design of MPSoC (Design of Multiprocessor System-on-chip (ECSE 541)) <a href="https://github.com/HungYangChang/Applying-the-Analog-Hardware-Acceleration-Kit-for-In-memory-Computing-Design" target="_blank" style="color: #0066cc; font-size: 0.9em;">[GitHub]</a></h3>
+                    <h3 data-en="System C implementation: Design of MPSoC (Design of Multiprocessor System-on-chip (ECSE 541)) [GitHub]" data-zh="System C 實作：多處理器系統單晶片設計 (Design of Multiprocessor System-on-chip (ECSE 541)) [GitHub]">System C implementation: Design of MPSoC (Design of Multiprocessor System-on-chip (ECSE 541)) <a href="https://github.com/HungYangChang/Applying-the-Analog-Hardware-Acceleration-Kit-for-In-memory-Computing-Design" target="_blank" style="color: #0066cc; font-size: 0.9em;">[GitHub]</a></h3>
                     <p class="project-date">Oct. 2020 - Dec. 2020, ECSE, McGill</p>
-                    <p>Utilized IBMs Analog Hardware Acceleration Kit and PyTorch to simulate in-memory FCNN & CNN computations for MNIST Dataset</p>
+                    <p data-en="Utilized IBMs Analog Hardware Acceleration Kit and PyTorch to simulate in-memory FCNN & CNN computations for MNIST Dataset" data-zh="利用 IBM 類比硬體加速套件和 PyTorch 模擬 MNIST 資料集的記憶體內 FCNN 和 CNN 計算">Utilized IBMs Analog Hardware Acceleration Kit and PyTorch to simulate in-memory FCNN & CNN computations for MNIST Dataset</p>
                 </div>
             </section>
 
             <section id="education">
-                <h2>Education</h2>
+                <h2 data-en="Education" data-zh="學歷">Education</h2>
                 
                 <div class="education-item">
                     <div class="education-header">
-                        <h3>MSc (thesis) in Electrical & Computer Engineering <a href="https://escholarship.mcgill.ca/concern/theses/bg257k93x" target="_blank" style="color: #0066cc; font-size: 0.9em;">[Thesis]</a></h3>
+                        <h3 data-en="MSc (thesis) in Electrical & Computer Engineering [Thesis]" data-zh="電機與電腦工程碩士（論文）[論文]">MSc (thesis) in Electrical & Computer Engineering <a href="https://escholarship.mcgill.ca/concern/theses/bg257k93x" target="_blank" style="color: #0066cc; font-size: 0.9em;">[Thesis]</a></h3>
                         <span class="institution">McGill University, Canada</span>
                         <span class="date">Sep. 2020 - Feb. 2023</span>
                     </div>
-                    <p>Overall GPA: 4/4</p>
+                    <p data-en="Overall GPA: 4/4" data-zh="總平均成績：4/4">Overall GPA: 4/4</p>
                 </div>
 
                 <div class="education-item">
                     <div class="education-header">
-                        <h3>B.S. in Electrical Engineering</h3>
+                        <h3 data-en="B.S. in Electrical Engineering" data-zh="電機工程學士">B.S. in Electrical Engineering</h3>
                         <span class="institution">National Tsing Hua University, Hsinchu (NTHU), Taiwan</span>
                         <span class="date">Sep. 2014 - Jun. 2018</span>
                     </div>
-                    <p>Overall GPA: 3.99/4.3 (3.87/4)</p>
+                    <p data-en="Overall GPA: 3.99/4.3 (3.87/4)" data-zh="總平均成績：3.99/4.3 (3.87/4)">Overall GPA: 3.99/4.3 (3.87/4)</p>
                 </div>
             </section>
 
             <section id="hobbies">
-                <h2>Hobbies & Sports</h2>
+                <h2 data-en="Hobbies & Sports" data-zh="興趣愛好與運動">Hobbies & Sports</h2>
                 
                 <div class="hobby-grid">
                     <div class="hobby-item">
-                        <h3>🏃 Running</h3>
-                        <p>Regular runner with a personal best of <strong>1h47m</strong> in half marathon</p>
+                        <h3 data-en="🏃 Running" data-zh="🏃 跑步">🏃 Running</h3>
+                        <p data-en="Regular runner with a personal best of <strong>1h47m</strong> in half marathon" data-zh="定期跑步，半馬個人最佳成績 <strong>1小時47分</strong>">Regular runner with a personal best of <strong>1h47m</strong> in half marathon</p>
                     </div>
                     
                     <div class="hobby-item">
-                        <h3>🏀 Basketball</h3>
-                        <p>Enjoy playing basketball recreationally and following the sport</p>
+                        <h3 data-en="🏀 Basketball" data-zh="🏀 籃球">🏀 Basketball</h3>
+                        <p data-en="Enjoy playing basketball recreationally and following the sport" data-zh="喜歡休閒打籃球和關注這項運動">Enjoy playing basketball recreationally and following the sport</p>
                     </div>
                     
                     <div class="hobby-item">
-                        <h3>🏊 Swimming</h3>
-                        <p>Regular swimmer with <strong>27m</strong> time for 1000m distance</p>
+                        <h3 data-en="🏊 Swimming" data-zh="🏊 游泳">🏊 Swimming</h3>
+                        <p data-en="Regular swimmer with <strong>27m</strong> time for 1000m distance" data-zh="定期游泳，1000公尺距離 <strong>27分鐘</strong> 完成">Regular swimmer with <strong>27m</strong> time for 1000m distance</p>
                     </div>
                     
                     <div class="hobby-item">
-                        <h3>💪 Gym & Fitness</h3>
-                        <p>Consistent gym routine focusing on strength training and overall fitness</p>
+                        <h3 data-en="💪 Gym & Fitness" data-zh="💪 健身房與體能訓練">💪 Gym & Fitness</h3>
+                        <p data-en="Consistent gym routine focusing on strength training and overall fitness" data-zh="規律的健身房習慣，專注於力量訓練和整體體能">Consistent gym routine focusing on strength training and overall fitness</p>
                     </div>
                 </div>
             </section>
 
             <section id="skills">
-                <h2>Skills</h2>
+                <h2 data-en="Skills" data-zh="專業技能">Skills</h2>
                 
                 <div class="skill-category">
-                    <h3>Programming Languages</h3>
+                    <h3 data-en="Programming Languages" data-zh="程式語言">Programming Languages</h3>
                     <p>Python, Pytorch, Pytest, Tensorflow, TVM, Matlab, SystemC, LATEX</p>
                 </div>
 
                 <div class="skill-category">
-                    <h3>Engineering Tools</h3>
+                    <h3 data-en="Engineering Tools" data-zh="工程工具">Engineering Tools</h3>
                     <p>DevOps, gPRC, Iceberg Catalog, Flask, Docker, Kubernetes, Jira</p>
                 </div>
 
                 <div class="skill-category">
-                    <h3>Awards & Honors</h3>
+                    <h3 data-en="Awards & Honors" data-zh="獎項與榮譽">Awards & Honors</h3>
                     <ul>
-                        <li><strong>Graduate Excellence Fellowship</strong> - Awarded with 4600 CAD for 10 selected graduated students (ECSE, McGill, 2022)</li>
-                        <li><strong>Outstanding Project Award in Contest of Implementation</strong> - Top 10 of Research project competition with more than 250 student competitors (EECS, NTHU, 2018)</li>
-                        <li><strong>International Volunteer Certification</strong> - Awarded with $1000 USD funding to host 100 people classes, and school anniversary fair in Malaysia (Ministry of Education Taiwan, 2015)</li>
+                        <li data-en="<strong>Graduate Excellence Fellowship</strong> - Awarded with 4600 CAD for 10 selected graduated students (ECSE, McGill, 2022)" data-zh="<strong>研究生卓越獎學金</strong> - 為 10 名選定研究生頒發 4600 加元（ECSE, McGill, 2022）"><strong>Graduate Excellence Fellowship</strong> - Awarded with 4600 CAD for 10 selected graduated students (ECSE, McGill, 2022)</li>
+                        <li data-en="<strong>Outstanding Project Award in Contest of Implementation</strong> - Top 10 of Research project competition with more than 250 student competitors (EECS, NTHU, 2018)" data-zh="<strong>實作競賽優秀專案獎</strong> - 在超過 250 名學生競爭者的研究專案競賽中名列前 10 名（EECS, NTHU, 2018）"><strong>Outstanding Project Award in Contest of Implementation</strong> - Top 10 of Research project competition with more than 250 student competitors (EECS, NTHU, 2018)</li>
+                        <li data-en="<strong>International Volunteer Certification</strong> - Awarded with $1000 USD funding to host 100 people classes, and school anniversary fair in Malaysia (Ministry of Education Taiwan, 2015)" data-zh="<strong>國際志工證書</strong> - 獲得 1000 美元資助，在馬來西亞舉辦 100 人課程和校慶博覽會（台灣教育部，2015）"><strong>International Volunteer Certification</strong> - Awarded with $1000 USD funding to host 100 people classes, and school anniversary fair in Malaysia (Ministry of Education Taiwan, 2015)</li>
                     </ul>
                 </div>
             </section>
         </main>
 
         <footer>
-            <p>&copy; 2024 Hung-Yang Chang. Built with HTML & CSS.</p>
+            <p data-en="&copy; 2024 Hung-Yang Chang. Built with HTML & CSS." data-zh="&copy; 2024 張宏暘。使用 HTML & CSS 建構。">&copy; 2024 Hung-Yang Chang. Built with HTML & CSS.</p>
         </footer>
     </div>
+    
+    <script>
+        // Language switching functionality
+        let currentLanguage = 'en';
+        
+        function switchLanguage(lang) {
+            currentLanguage = lang;
+            
+            // Update button states
+            document.getElementById('lang-en').classList.toggle('active', lang === 'en');
+            document.getElementById('lang-zh').classList.toggle('active', lang === 'zh');
+            
+            // Update all elements with language attributes
+            const elements = document.querySelectorAll('[data-en][data-zh]');
+            elements.forEach(element => {
+                element.textContent = element.getAttribute(`data-${lang}`);
+            });
+            
+            // Update page title
+            document.title = lang === 'en' ? 
+                'James (Hung-Yang) Chang' : 
+                '張宏暘 (James Chang)';
+            
+            // Store preference in localStorage
+            localStorage.setItem('preferredLanguage', lang);
+        }
+        
+        // Event listeners for language buttons
+        document.getElementById('lang-en').addEventListener('click', () => switchLanguage('en'));
+        document.getElementById('lang-zh').addEventListener('click', () => switchLanguage('zh'));
+        
+        // Load saved language preference or default to English
+        const savedLanguage = localStorage.getItem('preferredLanguage') || 'en';
+        switchLanguage(savedLanguage);
+    </script>
 </body>
 </html>
