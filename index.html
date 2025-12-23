@@ -44,11 +44,55 @@
 
         <main>
             <section class="intro">
-                <p data-en="I'm James Chang, an AI Software Developer at Cerence, specializing in LLM function calls, edge AI, and hardware acceleration. My work focuses on optimizing AI systems for automotive applications and edge devices, combining software engineering with machine learning expertise." data-zh="我是 Cerence 的 AI 軟體開發工程師，專精於大型語言模型函數調用、邊緣 AI 與硬體加速。我的工作專注於優化車用應用與邊緣裝置的 AI 系統，結合軟體工程與機器學習專業。">I'm James Chang, an AI Software Developer at Cerence, specializing in LLM function calls, edge AI, and hardware acceleration. My work focuses on optimizing AI systems for automotive applications and edge devices, combining software engineering with machine learning expertise.</p>
+                <p data-en="About me: I'm James (Hung-Yang) Chang, an AI Software Developer at Cerence, specializing in LLM function calls, edge AI, and hardware acceleration. My work focuses on optimizing AI systems for automotive applications and edge devices, combining software engineering with machine learning expertise." data-zh="我是 Cerence 的 AI 軟體開發工程師，專精於大型語言模型函數調用、邊緣 AI 與硬體加速。我的工作專注於優化車用應用與邊緣裝置的 AI 系統，結合軟體工程與機器學習專業。">About me: I'm James (Hung-Yang) Chang, an AI Software Developer at Cerence, specializing in LLM function calls, edge AI, and hardware acceleration. My work focuses on optimizing AI systems for automotive applications and edge devices, combining software engineering with machine learning expertise.</p>
+            </section>
+
+            <section id="education">
+                <div class="section-header">
+                    <h2 data-en="🎓 Education" data-zh="🎓 學歷">🎓 Education</h2>
+                    <button class="minimize-btn" data-section="education" aria-label="Minimize section">−</button>
+                </div>
+                <div class="section-content">
+                    <div class="education-cards-container">
+                        <!-- NTHU Card (Left) -->
+                        <div class="education-card">
+                            <div class="university-logo">
+                                <img src="picture/NTHU_Round_Seal.png" alt="National Tsing Hua University" />
+                            </div>
+                            <div class="education-details">
+                                <h3>B.S. in Electrical Engineering</h3>
+                                <p class="university-name"><a href="https://dee.site.nthu.edu.tw/index.php?Lang=en" data-zh-href="https://dee.site.nthu.edu.tw/index.php?Lang=zh-tw" target="_blank" style="color: var(--link-color); text-decoration: none;" data-en="National Tsing Hua University, Hsinchu (NTHU), Taiwan" data-zh="國立清華大學電機工程學系, 新竹 (NTHU), 台灣">National Tsing Hua University, Hsinchu (NTHU), Taiwan</a></p>
+                                <p class="education-date">Sep. 2014 - Jun. 2018</p>
+                                <p class="education-gpa">Overall GPA: 3.99/4.3 (3.87/4)</p>
+                            </div>
+                        </div>
+
+                        <!-- Connecting Line -->
+                        <div class="education-connector">
+                            <div class="connector-line"></div>
+                        </div>
+
+                        <!-- McGill Card (Right) -->
+                        <div class="education-card">
+                            <div class="university-logo">
+                                <img src="picture/mcgill.png" alt="McGill University" />
+                            </div>
+                            <div class="education-details">
+                                <h3>MSc (thesis) in Electrical & Computer Engineering</h3>
+                                <p class="university-name"><a href="https://www.mcgill.ca/ece/" target="_blank" style="color: var(--link-color); text-decoration: none;">McGill University, Canada</a></p>
+                                <p class="education-date">Sep. 2020 - Feb. 2023</p>
+                                <p class="education-gpa">Overall GPA: 4/4</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <section id="experience">
-                <h2 data-en="💼 Experience" data-zh="💼 工作經歷">💼 Experience</h2>
+                <div class="section-header">
+                    <h2 data-en="💼 Experience" data-zh="💼 工作經歷">💼 Experience</h2>
+                </div>
+                <div class="section-content">
                 
                 <div class="experience-item">
                     <div class="experience-header">
@@ -63,7 +107,7 @@
 
                 <div class="experience-item">
                     <div class="experience-header">
-                        <h3 data-en="Machine Learning Engineer, Bittensor (Open-source ML), Opentensor" data-zh="機器學習工程師, Bittensor (Open-source ML), Opentensor"></h3>
+                        <h3 data-en="Machine Learning Engineer, Bittensor, Opentensor" data-zh="機器學習工程師, Bittensor (Open-source ML), Opentensor"></h3>
                         <span class="date">Mar. 2023 - Jul. 2023</span>
                     </div>
                     <ul>
@@ -85,7 +129,7 @@
 
                 <div class="experience-item">
                     <div class="experience-header">
-                        <h3 data-en="Research Intern, IBM Neuromorphic Devices and Architectures Research Group" data-zh="研究實習生, IBM Neuromorphic Devices and Architectures Research Group"></h3>
+                        <h3 data-en="Research Intern, IBM Neuromorphic Devices and Architectures" data-zh="研究實習生, IBM Neuromorphic Devices and Architectures Research Group"></h3>
                         <span class="date">Oct. 2018 - Apr. 2019</span>
                     </div>
                     <ul>
@@ -113,10 +157,15 @@
                         <li data-en="Cooperated with Industrial Technology Research Institute (ITRI) with USD 30,000 project funding" data-zh="與工業技術研究院合作，獲得 30,000 美元專案資金"></li>
                     </ul>
                 </div>
+                </div>
             </section>
 
             <section id="publications">
-                <h2 data-en="📚 Selected Publications" data-zh="📚 精選學術發表"></h2>
+                <div class="section-header">
+                    <h2 data-en="📚 Selected Publications" data-zh="📚 精選學術發表"></h2>
+                    <button class="minimize-btn" data-section="publications" aria-label="Minimize section">−</button>
+                </div>
+                <div class="section-content">
                 
                 <div class="publication-item">
                     <h3 data-en="PipeBERT: High-throughput BERT Inference for ARM Big.LITTLE Multi-core Processors" data-zh="PipeBERT: ARM Big.LITTLE 多核心處理器的高吞吐量 BERT 推論"></h3>
@@ -141,10 +190,15 @@
                     <p class="publication-venue">2019 Symposium on VLSI Technology (Oral Presentation)</p>
                     <p class="publication-authors">E.R Hsieh, H. Y. Chang, Steve S. Chung, S. Simon Wong et al.</p>
                 </div>
+                </div>
             </section>
 
             <section id="projects">
-                <h2 data-en="🚀 Selected Projects" data-zh="🚀 精選專案項目">🚀 Selected Projects</h2>
+                <div class="section-header">
+                    <h2 data-en="🚀 Selected Projects" data-zh="🚀 精選專案項目">🚀 Selected Projects</h2>
+                    <button class="minimize-btn" data-section="projects" aria-label="Minimize section">−</button>
+                </div>
+                <div class="section-content">
                 
                 <div class="project-item">
                     <h3 data-en="Hardware Aware Efficient Training Competition (ICLR 2021 Workshop)" data-zh="硬體感知高效訓練競賽 (ICLR 2021 Workshop)">Hardware Aware Efficient Training Competition (ICLR 2021 Workshop) <a href="https://github.com/HungYangChang/HAET-2021-competition-baseline-code" target="_blank" style="color: #0066cc; font-size: 0.9em;">[GitHub]</a></h3>
@@ -163,32 +217,15 @@
                     <p class="project-date">Oct. 2020 - Dec. 2020, ECSE, McGill</p>
                     <p data-en="Utilized IBMs Analog Hardware Acceleration Kit and PyTorch to simulate in-memory FCNN & CNN computations for MNIST Dataset" data-zh="利用 IBM 類比硬體加速套件和 PyTorch 模擬 MNIST 資料集的記憶體內 FCNN 和 CNN 計算">Utilized IBMs Analog Hardware Acceleration Kit and PyTorch to simulate in-memory FCNN & CNN computations for MNIST Dataset</p>
                 </div>
-            </section>
-
-            <section id="education">
-                <h2 data-en="🎓 Education" data-zh="🎓 學歷">🎓 Education</h2>
-                
-                <div class="education-item">
-                    <div class="education-header">
-                        <h3 data-en="MSc (thesis) in Electrical & Computer Engineering [Thesis]" data-zh="電機與電腦工程碩士（論文）[論文]">MSc (thesis) in Electrical & Computer Engineering <a href="https://escholarship.mcgill.ca/concern/theses/bg257k93x" target="_blank" style="color: #0066cc; font-size: 0.9em;">[Thesis]</a></h3>
-                        <span class="institution">McGill University, Canada</span>
-                        <span class="date">Sep. 2020 - Feb. 2023</span>
-                    </div>
-                    <p data-en="Overall GPA: 4/4" data-zh="總平均成績：4/4">Overall GPA: 4/4</p>
-                </div>
-
-                <div class="education-item">
-                    <div class="education-header">
-                        <h3 data-en="B.S. in Electrical Engineering" data-zh="電機工程學士">B.S. in Electrical Engineering</h3>
-                        <span class="institution">National Tsing Hua University, Hsinchu (NTHU), Taiwan</span>
-                        <span class="date">Sep. 2014 - Jun. 2018</span>
-                    </div>
-                    <p data-en="Overall GPA: 3.99/4.3 (3.87/4)" data-zh="總平均成績：3.99/4.3 (3.87/4)">Overall GPA: 3.99/4.3 (3.87/4)</p>
                 </div>
             </section>
 
             <section id="skills">
-                <h2 data-en="⚡ Skills" data-zh="⚡ 專業技能">⚡ Skills</h2>
+                <div class="section-header">
+                    <h2 data-en="⚡ Skills" data-zh="⚡ 專業技能">⚡ Skills</h2>
+                    <button class="minimize-btn" data-section="skills" aria-label="Minimize section">−</button>
+                </div>
+                <div class="section-content">
                 
                 <div class="skill-category">
                     <h3 data-en="Programming Languages" data-zh="程式語言">Programming Languages</h3>
@@ -197,7 +234,7 @@
 
                 <div class="skill-category">
                     <h3 data-en="Engineering Tools" data-zh="工程工具">Engineering Tools</h3>
-                    <p>DevOps, gPRC, Iceberg Catalog, Flask, Docker, Kubernetes, Jira</p>
+                    <p>DevOps, gPRC, Iceberg Catalog, MCP, Google A2A, Flask, Docker, Kubernetes, Jira</p>
                 </div>
 
                 <div class="skill-category">
@@ -208,62 +245,112 @@
                         <li data-en="<strong>International Volunteer Certification</strong> - Awarded with $1000 USD funding to host 100 people classes, and school anniversary fair in Malaysia (Ministry of Education Taiwan, 2015)" data-zh="<strong>國際志工證書</strong> - 獲得 1000 美元資助，在馬來西亞舉辦 100 人課程和校慶博覽會（台灣教育部，2015）"><strong>International Volunteer Certification</strong> - Awarded with $1000 USD funding to host 100 people classes, and school anniversary fair in Malaysia (Ministry of Education Taiwan, 2015)</li>
                     </ul>
                 </div>
+                </div>
             </section>
 
             <section id="hobbies">
-                <h2 data-en="🏠 Hobbies/Personal" data-zh="🏠 興趣愛好/個人">🏠 Hobbies/Personal</h2>
-                
-                <div class="hobby-grid">
-                    <div class="hobby-item">
-                        <h3 data-en="🏃 Running" data-zh="🏃 跑步">🏃 Running</h3>
-                        <p data-en="Regular runner with a personal best of <strong>1h47m</strong> in half marathon" data-zh="定期跑步，半馬個人最佳成績 <strong>1小時47分</strong>">Regular runner with a personal best of <strong>1h47m</strong> in half marathon</p>
-                    </div>
-                    
-                    <div class="hobby-item">
-                        <h3 data-en="🏀 Basketball" data-zh="🏀 籃球">🏀 Basketball</h3>
-                        <p data-en="Enjoy playing basketball recreationally and following the sport" data-zh="喜歡休閒打籃球和關注這項運動">Enjoy playing basketball recreationally and following the sport</p>
-                    </div>
-                    
-                    <div class="hobby-item">
-                        <h3 data-en="🏊 Swimming" data-zh="🏊 游泳">🏊 Swimming</h3>
-                        <p data-en="Regular swimmer with <strong>27m</strong> time for 1000m distance" data-zh="定期游泳，1000公尺距離 <strong>27分鐘</strong> 完成">Regular swimmer with <strong>27m</strong> time for 1000m distance</p>
-                    </div>
-                    
-                    <div class="hobby-item">
-                        <h3 data-en="💪 Gym & Fitness" data-zh="💪 健身房與體能訓練">💪 Gym & Fitness</h3>
-                        <p data-en="Consistent gym routine focusing on strength training and overall fitness" data-zh="規律的健身房習慣，專注於力量訓練和整體體能">Consistent gym routine focusing on strength training and overall fitness</p>
-                    </div>
-                    <div class="hobby-item">
-                        <h3 data-en="🏃 Strava" data-zh="🏃 Strava">🏃 Strava</h3>
-                        <p data-en="Track my running and fitness activities <a href=&quot;https://www.strava.com/athletes/hung-yangchang&quot; target=&quot;_blank&quot; style=&quot;color: #0066cc; font-size: 0.9em;&quot;>🔗 Follow on Strava</a>" data-zh="追蹤我的跑步和健身活動 <a href=&quot;https://www.strava.com/athletes/hung-yangchang&quot; target=&quot;_blank&quot; style=&quot;color: #0066cc; font-size: 0.9em;&quot;>🔗 在 Strava 上追蹤</a>">Track my running and fitness activities <a href="https://www.strava.com/athletes/hung-yangchang" target="_blank" style="color: #0066cc; font-size: 0.9em;">🔗 Follow on Strava</a></p>
-                    </div>
+                <div class="section-header">
+                    <h2 data-en="🏠 Hobbies/Personal" data-zh="🏠 興趣愛好/個人">🏠 Hobbies/Personal</h2>
+                    <button class="minimize-btn" data-section="hobbies" aria-label="Minimize section">−</button>
                 </div>
+                <div class="section-content">
+                    
+                    <!-- Sports & Fitness Section -->
+                    <div class="hobbies-category">
+                        <h3 data-en="🏃‍♂️ Sports & Fitness" data-zh="🏃‍♂️ 運動與健身">🏃‍♂️ Sports & Fitness</h3>
+                        <div class="hobby-cards">
+                            <div class="hobby-card">
+                                <div class="hobby-icon">🏃</div>
+                                <div class="hobby-content">
+                                    <h4 data-en="Running" data-zh="跑步">Running</h4>
+                                    <p data-en="Regular runner with a personal best of <strong>1h47m</strong> in half marathon" data-zh="定期跑步，半馬個人最佳成績 <strong>1小時47分</strong>">Regular runner with a personal best of <strong>1h47m</strong> in half marathon</p>
+                                </div>
+                            </div>
+                            
+                            <div class="hobby-card">
+                                <div class="hobby-icon">🏊</div>
+                                <div class="hobby-content">
+                                    <h4 data-en="Swimming" data-zh="游泳">Swimming</h4>
+                                    <p data-en="Regular swimmer with <strong>27min</strong> time for 1000m distance" data-zh="定期游泳，1000公尺距離 <strong>27分鐘</strong> 完成">Regular swimmer with <strong>27min</strong> time for 1000m distance</p>
+                                </div>
+                            </div>
+                            
+                            <div class="hobby-card">
+                                <div class="hobby-icon">🏀</div>
+                                <div class="hobby-content">
+                                    <h4 data-en="Basketball" data-zh="籃球">Basketball</h4>
+                                    <p data-en="Enjoy playing basketball recreationally and following the sport" data-zh="喜歡休閒打籃球和關注這項運動">Enjoy playing basketball recreationally and following the sport</p>
+                                </div>
+                            </div>
+                            
+                            <div class="hobby-card">
+                                <div class="hobby-icon">💪</div>
+                                <div class="hobby-content">
+                                    <h4 data-en="Gym & Fitness" data-zh="健身房與體能訓練">Gym & Fitness</h4>
+                                    <p data-en="Consistent gym routine focusing on strength training and overall fitness" data-zh="規律的健身房習慣，專注於力量訓練和整體體能">Consistent gym routine focusing on strength training and overall fitness</p>
+                                </div>
+                            </div>
 
-                <div class="pets-section">
-                    <h3 data-en="🐾 My Pets" data-zh="🐾 我的寵物">🐾 My Pets</h3>
-                    <div class="pets-grid">
-                        <div class="pet-item">
-                            <img src="picture/nana.jpeg" alt="Nana" class="pet-photo">
-                            <h4 data-en="Nana 🐕" data-zh="娜娜 🐕">Nana 🐕</h4>
-                            <p data-en="Cocker Spaniel who loves playing fetch, has amazing energy, and enjoys running" data-zh="可卡布，喜歡玩接球遊戲，活動力驚人，喜歡跑步">Cocker Spaniel who loves playing fetch, has amazing energy, and enjoys running</p>
-                        </div>
-                        <div class="pet-item">
-                            <img src="picture/nini.jpeg" alt="Nini" class="pet-photo">
-                            <h4 data-en="Nini 🐕" data-zh="妮妮 🐕">Nini 🐕</h4>
-                            <p data-en="Poodle who loves to cuddle and be affectionate like a little furry caterpillar" data-zh="貴賓狗，喜歡貼在人身上的撒嬌的小毛毛蟲">Poodle who loves to cuddle and be affectionate like a little furry caterpillar</p>
-                        </div>
-                        <div class="pet-item">
-                            <img src="picture/ponyo.jpeg" alt="Poyno" class="pet-photo">
-                            <h4 data-en="Poyno 🐈" data-zh="波諾 🐈">Poyno 🐈</h4>
-                            <p data-en="My curious cat who loves to nap in sunny spots" data-zh="我好奇的貓咪，喜歡在陽光充足的地方打盹">My curious cat who loves to nap in sunny spots</p>
+                            <div class="hobby-card">
+                                <div class="hobby-icon">⛷️</div>
+                                <div class="hobby-content">
+                                    <h4 data-en="Skiing" data-zh="滑雪">Skiing</h4>
+                                    <p data-en="Current at <strong>Blue Square</strong> level, aiming toward <strong>Black Diamond</strong> runs" data-zh="目前 <strong>藍方</strong> 水平，目標挑戰 <strong>黑鑽</strong> 路線">Current at <strong>Blue Square</strong> level, aiming toward <strong>Black Diamond</strong> runs</p>
+                                </div>
+                            </div>
+
+                            <div class="hobby-card">
+                                <div class="hobby-icon">🏃</div>
+                                <div class="hobby-content">
+                                    <h4 data-en="Strava" data-zh="Strava">Strava</h4>
+                                    <p data-en="Track my running and fitness activities <a href=&quot;https://www.strava.com/athletes/hung-yangchang&quot; target=&quot;_blank&quot; style=&quot;color: var(--link-color); font-size: 0.9em;&quot;>🔗 Follow on Strava</a>" data-zh="追蹤我的跑步和健身活動 <a href=&quot;https://www.strava.com/athletes/hung-yangchang&quot; target=&quot;_blank&quot; style=&quot;color: var(--link-color); font-size: 0.9em;&quot;>🔗 在 Strava 上追蹤</a>">Track my running and fitness activities <a href="https://www.strava.com/athletes/hung-yangchang" target="_blank" style="color: var(--link-color); font-size: 0.9em;">🔗 Follow on Strava</a></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
+                    <!-- My Pets Section -->
+                    <div class="hobbies-category">
+                        <h3 data-en="🐾 My Pets 🐾" data-zh="🐾 我的寵物 🐾">🐾 My Pets 🐾</h3>
+                        <div class="hobby-cards">
+                            <div class="hobby-card pet-card">
+                                <div class="pet-photo-container">
+                                    <img src="picture/nana.jpeg" alt="Nana" class="pet-photo">
+                                </div>
+                                <div class="hobby-content">
+                                    <h4 data-en="Nana 🐕" data-zh="娜娜 🐕">Nana 🐕</h4>
+                                    <p data-en="Cockerpoo who loves playing fetch, has amazing energy, and enjoys running" data-zh="可卡布，喜歡玩接球遊戲，活動力驚人，喜歡跑步">Cocker Spaniel who loves playing fetch, has amazing energy, and enjoys running</p>
+                                </div>
+                            </div>
+                            
+                            <div class="hobby-card pet-card">
+                                <div class="pet-photo-container">
+                                    <img src="picture/nini.jpeg" alt="Nini" class="pet-photo">
+                                </div>
+                                <div class="hobby-content">
+                                    <h4 data-en="Nini 🐕" data-zh="妮妮 🐕">Nini 🐕</h4>
+                                    <p data-en="Poodle who loves to cuddle and be affectionate like a little furry caterpillar" data-zh="貴賓狗，喜歡貼在人身上的撒嬌的小毛毛蟲">Poodle who loves to cuddle and be affectionate like a little furry caterpillar</p>
+                                </div>
+                            </div>
+                            
+                            <div class="hobby-card pet-card">
+                                <div class="pet-photo-container">
+                                    <img src="picture/ponyo.jpeg" alt="Poyno" class="pet-photo">
+                                </div>
+                                <div class="hobby-content">
+                                    <h4 data-en="Poyno 🐈" data-zh="波妞 🐈">Poyno 🐈</h4>
+                                    <p data-en="My curious cat who loves to nap in sunny spots" data-zh="調皮的小貓，喜歡和娜娜打架，到處跳來跳去">My curious cat who loves to nap in sunny spots</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </section>
         </main>
 
         <footer>
-            <p data-en="&copy; 2026 Hung-Yang Chang. Built with HTML & CSS." data-zh="&copy; 2026 張宏暘。使用 HTML & CSS 建構。">&copy; 2026 Hung-Yang Chang. Built with HTML & CSS.</p>
+            <p data-en="&copy; 2026 Hung-Yang Chang. Built with HTML & CSS. vibe coding with winsurf" data-zh="&copy; 2026 張宏暘。使用 HTML & CSS 建構。vibe coding with winsurf">&copy; 2026 Hung-Yang Chang. Built with HTML & CSS. vibe coding with winsurf</p>
         </footer>
     </div>
     
@@ -311,6 +398,15 @@
                 }
             });
             
+            // Update university links to use correct language URLs
+            document.querySelectorAll('a[data-zh-href]').forEach(link => {
+                if (lang === 'zh') {
+                    link.href = link.getAttribute('data-zh-href');
+                } else {
+                    link.href = link.getAttribute('href');
+                }
+            });
+            
             // Update page title
             document.title = lang === 'en' ? 
                 'James (Hung-Yang) Chang' : 
@@ -331,6 +427,87 @@
         
         setTheme(savedTheme);
         switchLanguage(savedLanguage);
-    </script>
+
+        // Minimize/Maximize functionality - simplified version
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('DOM loaded, setting up minimize buttons');
+            
+            // Simple toggle function
+            function toggleSection(sectionElement) {
+                const content = sectionElement.querySelector('.section-content');
+                const button = sectionElement.querySelector('.minimize-btn');
+                
+                if (!content || !button) return;
+                
+                const isMinimized = content.style.maxHeight === '0px' || content.classList.contains('minimized');
+                
+                console.log('Toggling section, current state:', isMinimized);
+                
+                if (isMinimized) {
+                    // Expand
+                    content.classList.remove('minimized');
+                    content.style.maxHeight = '5000px';
+                    content.style.opacity = '1';
+                    content.style.padding = '';
+                    content.style.margin = '';
+                    button.textContent = '−';
+                    button.classList.remove('minimized');
+                    sectionElement.classList.remove('minimized');
+                    console.log('Section expanded');
+                    
+                    // Remove from localStorage
+                    const minimizedSections = JSON.parse(localStorage.getItem('minimizedSections') || '[]');
+                    const index = minimizedSections.indexOf(sectionElement.id);
+                    if (index > -1) {
+                        minimizedSections.splice(index, 1);
+                    }
+                    localStorage.setItem('minimizedSections', JSON.stringify(minimizedSections));
+                } else {
+                    // Minimize
+                    content.classList.add('minimized');
+                    content.style.maxHeight = '0px';
+                    content.style.opacity = '0';
+                    content.style.padding = '0';
+                    content.style.margin = '0';
+                    button.textContent = '+';
+                    button.classList.add('minimized');
+                    sectionElement.classList.add('minimized');
+                    console.log('Section minimized');
+                    
+                    // Add to localStorage
+                    const minimizedSections = JSON.parse(localStorage.getItem('minimizedSections') || '[]');
+                    if (!minimizedSections.includes(sectionElement.id)) {
+                        minimizedSections.push(sectionElement.id);
+                    }
+                    localStorage.setItem('minimizedSections', JSON.stringify(minimizedSections));
+                }
+            }
+            
+            // Add click handlers to all minimize buttons
+            const buttons = document.querySelectorAll('.minimize-btn');
+            console.log('Found minimize buttons:', buttons.length);
+            
+            buttons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    const section = this.closest('section');
+                    console.log('Button clicked, section:', section.id);
+                    toggleSection(section);
+                });
+            });
+            
+            // Restore minimized sections
+            const minimizedSections = JSON.parse(localStorage.getItem('minimizedSections') || '[]');
+            minimizedSections.forEach(sectionId => {
+                if (sectionId === 'experience') return; // Skip experience section
+                const section = document.getElementById(sectionId);
+                if (section && section.querySelector('.minimize-btn')) {
+                    toggleSection(section);
+                }
+            });
+        });
+
+        </script>
 </body>
 </html>

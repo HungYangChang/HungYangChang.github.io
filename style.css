@@ -231,15 +231,71 @@ section {
     border-radius: 8px;
     padding: 30px;
     box-shadow: 0 2px 10px var(--shadow-color);
+    overflow: hidden;
+    transition: all 0.3s ease;
 }
 
-section h2 {
-    font-size: 1.8rem;
-    font-weight: 600;
-    color: var(--header-color);
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
     margin-bottom: 30px;
     border-bottom: 2px solid var(--border-color);
     padding-bottom: 10px;
+}
+
+.section-header h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--header-color);
+    margin: 0;
+}
+
+.minimize-btn {
+    background: none;
+    border: 1px solid var(--link-color);
+    color: var(--link-color);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+    margin-bottom: 2px;
+}
+
+.minimize-btn:hover {
+    background-color: var(--link-color);
+    color: white;
+    transform: scale(1.1);
+}
+
+.minimize-btn.minimized {
+    transform: rotate(180deg);
+}
+
+.section-content {
+    max-height: 5000px;
+    opacity: 1;
+    transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.3s ease;
+    overflow: hidden;
+}
+
+.section-content.minimized {
+    max-height: 0;
+    opacity: 0;
+    padding: 0;
+    margin: 0;
+}
+
+section.minimized {
+    padding-bottom: 15px;
+    margin-bottom: 30px;
 }
 
 /* Intro section */
@@ -382,38 +438,234 @@ section h2 {
     color: var(--text-color);
 }
 
-/* Education */
-.education-item {
-    margin-bottom: 30px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid var(--border-color);
+/* Education - Circular Cards Design */
+.education-cards-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px 0;
+    position: relative;
 }
 
-.education-item:last-child {
-    border-bottom: none;
-}
-
-.education-header {
+.education-card {
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    margin-bottom: 10px;
+    align-items: center;
+    text-align: center;
+    background-color: var(--card-bg);
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    padding: 35px;
+    box-shadow: 0 8px 32px var(--shadow-color);
+    border: 2px solid var(--card-border);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    z-index: 2;
+    aspect-ratio: 1/1;
 }
 
-.education-header h3 {
-    font-size: 1.2rem;
+.education-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px var(--shadow-color);
+}
+
+.university-logo {
+    margin-bottom: 15px;
+    width: 96px;
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.university-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+    background-color: white;
+    padding: 5px;
+}
+
+.education-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.education-details h3 {
+    font-size: 0.9rem;
     font-weight: 600;
     color: var(--header-color);
+    margin: 0 0 8px 0;
+    line-height: 1.2;
 }
 
-.institution {
+.university-name {
+    font-size: 0.85rem;
     font-weight: 500;
     color: var(--link-color);
+    margin: 0 0 6px 0;
+    line-height: 1.2;
 }
 
-.education-item p {
+.education-date {
+    font-size: 0.8rem;
     color: var(--subtitle-color);
-    font-size: 0.95rem;
+    margin: 0 0 6px 0;
+    font-weight: 400;
+}
+
+.education-gpa {
+    font-size: 0.8rem;
+    color: var(--text-color);
+    margin: 0;
+    font-weight: 500;
+}
+
+.education-connector {
+    position: relative;
+    width: 80px;
+    height: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.connector-line {
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, var(--card-border), var(--link-color), var(--card-border));
+    position: relative;
+}
+
+.connector-line::before,
+.connector-line::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: var(--link-color);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.connector-line::before {
+    left: 0;
+}
+
+.connector-line::after {
+    right: 0;
+}
+
+.connector-line::after {
+    content: '▶';
+    width: auto;
+    height: auto;
+    background: none;
+    color: var(--link-color);
+    font-size: 16px;
+    font-weight: bold;
+    right: -10px;
+    transform: translateY(-50%);
+}
+
+/* Responsive design for education cards */
+@media (max-width: 768px) {
+    .education-cards-container {
+        flex-direction: column;
+        gap: 40px;
+        margin: 30px 0;
+    }
+    
+    .education-card {
+        width: 290px;
+        height: 290px;
+        padding: 30px;
+        aspect-ratio: 1/1;
+    }
+    
+    .university-logo {
+        width: 72px;
+        height: 72px;
+        margin-bottom: 12px;
+    }
+    
+    .education-details h3 {
+        font-size: 0.85rem;
+    }
+    
+    .university-name {
+        font-size: 0.8rem;
+    }
+    
+    .education-date,
+    .education-gpa {
+        font-size: 0.75rem;
+    }
+    
+    .education-connector {
+        width: 2px;
+        height: 60px;
+    }
+    
+    .connector-line {
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(180deg, var(--card-border), var(--link-color), var(--card-border));
+    }
+    
+    .connector-line::before {
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .connector-line::after {
+        content: '▼';
+        width: auto;
+        height: auto;
+        background: none;
+        color: var(--link-color);
+        font-size: 14px;
+        font-weight: bold;
+        bottom: -10px;
+        top: auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 480px) {
+    .education-card {
+        width: 250px;
+        height: 250px;
+        padding: 25px;
+        aspect-ratio: 1/1;
+    }
+    
+    .university-logo {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .education-details h3 {
+        font-size: 0.8rem;
+    }
+    
+    .university-name {
+        font-size: 0.75rem;
+    }
+    
+    .education-date,
+    .education-gpa {
+        font-size: 0.7rem;
+    }
 }
 
 /* Hobbies section */
@@ -456,6 +708,178 @@ section h2 {
 .hobby-item strong {
     color: var(--link-color);
     font-weight: 600;
+}
+
+/* Hobbies section - Improved Design */
+.hobbies-category {
+    margin-bottom: 40px;
+}
+
+.hobbies-category h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--header-color);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hobby-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.hobby-card {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 15px var(--shadow-color);
+    border: 1px solid var(--card-border);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.hobby-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px var(--shadow-color);
+}
+
+.hobby-icon {
+    font-size: 2rem;
+    line-height: 1;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.hobby-content {
+    flex: 1;
+}
+
+.hobby-content h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--header-color);
+    margin: 0 0 8px 0;
+}
+
+.hobby-content p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--text-color);
+    margin: 0;
+}
+
+.hobby-content strong {
+    color: var(--link-color);
+    font-weight: 600;
+}
+
+/* Pet cards integrated into hobby structure */
+.hobby-card.pet-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 25px;
+}
+
+.hobby-card.pet-card .pet-photo-container {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 15px;
+    border: 3px solid var(--card-border);
+    box-shadow: 0 4px 10px var(--shadow-color);
+}
+
+.hobby-card.pet-card .pet-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.hobby-card.pet-card:hover .pet-photo {
+    transform: scale(1.05);
+}
+
+.hobby-card.pet-card .hobby-content h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--header-color);
+    margin: 0 0 10px 0;
+}
+
+.hobby-card.pet-card .hobby-content p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--text-color);
+    margin: 0;
+}
+
+/* Responsive design for hobbies */
+@media (max-width: 768px) {
+    .hobby-cards {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .hobby-card {
+        padding: 15px;
+        gap: 12px;
+    }
+    
+    .hobby-card.pet-card {
+        padding: 20px;
+    }
+    
+    .hobby-icon {
+        font-size: 1.5rem;
+    }
+    
+    .hobby-content h4 {
+        font-size: 1rem;
+    }
+    
+    .hobby-content p {
+        font-size: 0.9rem;
+    }
+    
+    .hobby-card.pet-card .pet-photo-container {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .hobbies-category h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hobby-card {
+        padding: 12px;
+        gap: 10px;
+    }
+    
+    .hobby-card.pet-card {
+        padding: 15px;
+    }
+    
+    .hobby-icon {
+        font-size: 1.3rem;
+    }
+    
+    .hobby-card.pet-card .pet-photo-container {
+        width: 70px;
+        height: 70px;
+    }
 }
 
 /* Pets section */
