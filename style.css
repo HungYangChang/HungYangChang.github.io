@@ -224,6 +224,7 @@ nav a:hover {
 
 .version-toggle {
     display: flex;
+    position: relative;
 }
 
 .version-btn {
@@ -247,24 +248,13 @@ nav a:hover {
     color: white;
 }
 
-.version-btn {
-    position: relative;
-}
-
-.version-btn::after {
-    content: "Version History:\A\A• v1.0 - Initial portfolio launch\A• v1.1 - Added App Gallery section\A• v1.2 - Updated LinkedIn icon and favicon\A• v1.3 - Added version history feature";
+.version-dropdown {
     position: absolute;
     top: 125%;
-    left: 50%;
-    transform: translateX(-50%);
+    right: 0;
     background-color: var(--card-bg);
-    color: var(--text-color);
-    padding: 12px 16px;
-    border-radius: 8px;
     border: 1px solid var(--card-border);
-    white-space: pre;
-    font-size: 0.8rem;
-    line-height: 1.6;
+    border-radius: 8px;
     box-shadow: 0 4px 12px var(--shadow-color);
     opacity: 0;
     visibility: hidden;
@@ -274,28 +264,63 @@ nav a:hover {
     pointer-events: none;
 }
 
-.version-btn::before {
+.version-dropdown::before {
     content: "";
     position: absolute;
     top: -8px;
-    left: 50%;
-    transform: translateX(-50%);
+    right: 20px;
     border: 8px solid transparent;
     border-bottom-color: var(--card-border);
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-    z-index: 999;
 }
 
-.version-btn:hover::after {
+.version-btn:hover ~ .version-dropdown,
+.version-dropdown:hover {
     opacity: 1;
     visibility: visible;
+    pointer-events: auto;
 }
 
-.version-btn:hover::before {
-    opacity: 1;
-    visibility: visible;
+.version-content {
+    padding: 12px 16px;
+}
+
+.version-content h4 {
+    margin: 0 0 10px 0;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--header-color);
+}
+
+.version-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.version-content li {
+    font-size: 0.8rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin-bottom: 6px;
+    padding-left: 12px;
+    position: relative;
+}
+
+.version-content li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--link-color);
+    font-weight: bold;
+}
+
+.version-content li:last-child {
+    margin-bottom: 0;
+}
+
+.version-content strong {
+    color: var(--link-color);
+    font-weight: 600;
 }
 
 /* Contact links */
